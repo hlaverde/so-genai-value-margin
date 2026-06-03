@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\centering
+\caption{Embedding-based external validation of the AI-answerability proxy. For each tag we compute the mean cosine-similarity differential of a random sample of pre-ChatGPT questions against two sets of exemplar prompts: six that a frontier LLM answers well (short syntactic and how-to questions) and six that require private or organisation-specific context that a frontier LLM cannot reproduce. The mean differential is then correlated with the four pre-treatment AI-answerability index variants. Positive correlation indicates that the historical-feature-based index is consistent with an independent embedding-based proxy. Embeddings: \texttt{sentence-transformers all-MiniLM-L6-v2}, $N = 1000$ pre-ChatGPT questions.}
+\label{tab:embedding_validation}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Structural index variant & Pearson $r$ & $p$ & Spearman $\rho$ & $p$ \\
+\midrule
+Structural & 0.409 & 0.0000 & 0.509 & 0.0000 \\
+Zscore & 0.444 & 0.0000 & 0.502 & 0.0000 \\
+Pca & 0.478 & 0.0000 & 0.460 & 0.0000 \\
+Quantile & 0.504 & 0.0000 & 0.525 & 0.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}

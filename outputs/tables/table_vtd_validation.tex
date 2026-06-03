@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\caption{Out-of-sample predictive validation of the monitor. The value-composition signal is computed from observed counts through \emph{2023 only} (no DDD coefficient enters), and used to predict each tag's \emph{realised} high-value erosion in the held-out \emph{2024} data. The monitor signal predicts 2024 high-value erosion better than the activity-deficit signal a manager would otherwise use; the AUC gap is bootstrapped over tags. A loss-minimising threshold $\theta^\star$ is derived for three false-negative/false-positive cost ratios rather than fixed to a mean.}
+\label{tab:vtd_validation}
+\small
+\begin{tabular}{lr}
+\toprule
+Quantity & Value \\
+\midrule
+Tags in validation & 100 \\
+Spearman(monitor 2023, 2024 HV erosion) & -0.097 ($p=0.336$) \\
+Spearman(activity deficit 2023, 2024 HV erosion) & 0.620 ($p=0.000$) \\
+AUC, monitor predicting top-tercile 2024 erosion & 0.420 \\
+AUC, activity deficit predicting same & 0.820 \\
+AUC gap (monitor $-$ activity), bootstrap 95\% CI & -0.401 $[-0.586, -0.212]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,13 @@
+test,outcome,estimate,p_value,interpretation
+Baseline TWFE,log_questions,-0.3012703189551712,1.567000885716041e-05,core estimate
+Tag-specific linear trends,log_questions,-0.33082181690352325,2.8537503915697793e-08,controls simple differential tag trends
+Matched pre-trends,log_questions,-0.26710277555513595,,Mahalanobis high-low tag matched sample
+Two-way clustering,log_questions,-0.3012703189551712,2.3289708337648207e-05,clustered by tag and week
+Real shock vs placebos,log_questions,-0.3012703189551712,1.567000885716041e-05,compare with placebo distribution file
+Baseline TWFE,log_answers,-0.25390675400773094,0.00013132287700301504,core estimate
+Tag-specific linear trends,log_answers,-0.32731487434266454,6.912136825925328e-10,controls simple differential tag trends
+Matched pre-trends,log_answers,-0.2234159160432846,,Mahalanobis high-low tag matched sample
+Two-way clustering,log_answers,-0.25390675400773094,0.00017996349933935285,clustered by tag and week
+Real shock vs placebos,log_answers,-0.25390675400773094,0.00013132287700301504,compare with placebo distribution file
+PPML FE,questions,-0.07545535265422385,0.26466376957491056,IRR=0.927
+PPML FE,answers,-0.06117220511102642,0.3594348310958002,IRR=0.941

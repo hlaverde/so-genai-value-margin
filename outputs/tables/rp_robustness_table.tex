@@ -1,0 +1,59 @@
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\caption{Consolidated robustness battery for $\hat\beta_{\text{DDD}}$.}
+\label{tab:rp_robustness}
+\begin{tabular}{lrrrr}
+\toprule
+Specification & $\hat\beta_{\text{DDD}}$ & SE & $p$ & N \\
+\midrule
+\multicolumn{5}{l}{\textit{A. AI-answerability measures}} \\
+  Structural index (baseline) & -0.1082$^{**}$ & 0.0460 & 0.021 & 164,351 \\
+  z-score composite & -0.1378$^{***}$ & 0.0519 & 0.009 & 164,351 \\
+  PCA composite & -0.0449$^{**}$ & 0.0197 & 0.024 & 164,351 \\
+  Quartile rank & -0.2098$^{***}$ & 0.0722 & 0.005 & 164,351 \\
+\midrule
+\multicolumn{5}{l}{\textit{B. Sample restrictions}} \\
+  Top-50 tags by pre-period volume & -0.2067$^{**}$ & 0.0931 & 0.026 & 85,884 \\
+  Interquartile pre-slope band (75 tags) & -0.1550$^{***}$ & 0.0578 & 0.009 & 123,185 \\
+  Slope quartile 4 (steepest growth) & -0.3221$^{**}$ & 0.1260 & 0.017 & 40,775 \\
+  Slope quartile 1 (steepest decline) & -0.0554 & 0.0914 & 0.550 & 41,185 \\
+  Leave-one-out: drop top-1 (python) & -0.1655$^{***}$ & 0.0533 & 0.002 & 162,526 \\
+  Leave-out: drop top-5 & -0.1926$^{***}$ & 0.0546 & 0.001 & 155,278 \\
+  Leave-out: drop top-10 & -0.1957$^{***}$ & 0.0563 & 0.001 & 146,506 \\
+  Leave-out: drop top-20 & -0.1842$^{***}$ & 0.0673 & 0.008 & 129,152 \\
+\midrule
+\multicolumn{5}{l}{\textit{C. Outcome and method alternatives}} \\
+  Outcome $\log(1+\text{unique users})$ & -0.1329$^{***}$ & 0.0515 & 0.010 & 164,351 \\
+  PPML (Poisson FE) & -0.0984$^{**}$ & 0.0444 & 0.027 & 164,351 \\
+  Two-way clustering (tag + week) & -0.1378$^{***}$ & 0.0522 & 0.008 & --- \\
+  Fractional tag counts ($Q/n_{\text{tags}}$) & -0.1345$^{***}$ & 0.0471 & 0.005 & 164,968 \\
+\midrule
+\multicolumn{5}{l}{\textit{D. Identification: placebos, Honest-DiD, co-shock}} \\
+  Placebo cutoff 2020-05-30 (pre-only) & 0.0625$^{***}$ & 0.0235 & 0.009 & 99,185 \\
+  Placebo cutoff 2020-11-30 (pre-only) & 0.0643$^{***}$ & 0.0198 & 0.002 & 99,185 \\
+  Placebo cutoff 2021-05-30 (pre-only) & 0.0670$^{***}$ & 0.0200 & 0.001 & 99,185 \\
+  Placebo cutoff 2021-11-30 (pre-only) & 0.0620$^{***}$ & 0.0226 & 0.007 & 99,185 \\
+  Placebo cutoff 2022-05-30 (pre-only) & 0.0592$^{**}$ & 0.0231 & 0.012 & 99,185 \\
+  Real cutoff (2022-11-30) & -0.1378$^{***}$ & 0.0519 & 0.009 & 164,351 \\
+  Copilot placebo (2022-06-21, pre-ChatGPT) & 0.0575$^{**}$ & 0.0222 & 0.011 & 99,185 \\
+  Dual-shock: AI$\times$Sub$\times$Copilot & 0.0578$^{**}$ & 0.0226 & 0.012 & 164,351 \\
+  Dual-shock: AI$\times$Sub$\times$ChatGPT & -0.1573$^{***}$ & 0.0434 & 0.000 & 164,351 \\
+  Rolling placebo mean (29 cutoffs) & 0.0574 & 0.0068 & --- & --- \\
+  \quad share of rolling placebos $< -0.10$ & \multicolumn{4}{l}{0\%} \\
+  Honest-DiD bound at $M=0.0$ (worst-case post = +0.258) & \multicolumn{4}{l}{remains positive} \\
+  Honest-DiD bound at $M=0.5$ (worst-case post = +0.172) & \multicolumn{4}{l}{remains positive} \\
+  Honest-DiD bound at $M=1.0$ (worst-case post = +0.085) & \multicolumn{4}{l}{remains positive} \\
+  Honest-DiD bound at $M=1.5$ (worst-case post = -0.002) & \multicolumn{4}{l}{indistinguishable} \\
+  Honest-DiD bound at $M=2.0$ (worst-case post = -0.088) & \multicolumn{4}{l}{indistinguishable} \\
+  Honest-DiD bound at $M=3.0$ (worst-case post = -0.262) & \multicolumn{4}{l}{indistinguishable} \\
+\midrule
+\multicolumn{5}{l}{\textit{E. Wild cluster bootstrap}} \\
+  Wild bootstrap (Rademacher, 199 reps, cluster=tag) & -0.1378 & 0.0519 & $p_{\text{boot}}<0.005$ & --- \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.95\textwidth}
+\scriptsize
+Notes. Baseline regression: $\log(1+Q_{t,w,k}) = \beta_{\text{DDD}}\,(\text{AI}_t\cdot\text{Post}_w\cdot\text{Sub}_k) + \gamma_1 (\text{AI}_t\cdot\text{Post}_w) + \gamma_2 (\text{AI}_t\cdot\text{Sub}_k) + \gamma_3 (\text{Post}_w\cdot\text{Sub}_k) + \alpha_{t,k} + \delta_w + \varepsilon$. FE: tag$\times$question-type and week. Errors clustered by tag (CR1). $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$. Specification curve in Figure~\ref{fig:speccurve} reports 32 alternative specifications; 100\% are negative and significant at $p<0.05$.
+\end{minipage}
+\end{table}

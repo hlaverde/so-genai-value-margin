@@ -1,0 +1,9 @@
+user_id,tag,week_start,reputation_initial,user_age_days,posts,questions,answers
+101,python,2022-11-14,45,40,2,2,0
+102,python,2022-11-21,2500,900,3,1,2
+103,python,2022-12-05,30,20,1,1,0
+104,python,2022-12-12,800,500,2,1,1
+201,kubernetes,2022-11-14,80,120,1,1,0
+202,kubernetes,2022-11-21,4000,1300,2,0,2
+203,kubernetes,2022-12-05,60,60,1,1,0
+204,kubernetes,2022-12-12,1500,700,2,1,1

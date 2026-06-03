@@ -1,0 +1,9 @@
+control_def,beta,se
+baseline (VES + advanced\_architecture),-0.1081789418032067,0.04599327681380926
+sole control: \texttt{advanced_architecture},0.013957055130509412,0.04685243709125406
+sole control: \texttt{debugging_simple},-0.032379380831378916,0.023116237750722635
+sole control: \texttt{how_to},0.06849298717589873,0.026279659346601383
+sole control: \texttt{long_code},0.021199058774260243,0.025543098088645213
+sole control: \texttt{other_conceptual},-0.0682978387154064,0.03843725431450067
+sole control: \texttt{short_code},0.1217553871341601,0.02662411237266105
+sole control: \texttt{version_environment_specific},-0.13019329232010388,0.047799012768618504

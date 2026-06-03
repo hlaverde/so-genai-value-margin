@@ -1,0 +1,14 @@
+\begin{table}[ht]
+\centering
+\caption{Baseline DDD coefficient under CR1 (Liang--Zeger) and CR3 (jackknife) cluster-robust inference, with tag as the cluster variable ($n_{\text{tag}} = 100$). CR3 is the jackknife-style alternative recommended when the number of clusters is at the lower end of the asymptotic regime.}
+\label{tab:cr3_baseline}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Specification & $\hat\beta_{DDD}$ & SE & $t$ & $p$ & 95\% CI \\
+\midrule
+CR1 (Liang-Zeger, baseline) & -0.1082 & 0.0460 & -2.35 & 0.0206 & [-0.199, -0.017] \\
+CR3 (jackknife, n_cluster=100) & -0.1082 & 0.0495 & -2.19 & 0.0311 & [-0.206, -0.010] \\
+\bottomrule
+\end{tabular}
+\end{table}

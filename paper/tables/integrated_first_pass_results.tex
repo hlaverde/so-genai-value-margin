@@ -1,0 +1,31 @@
+\begin{table}[!htbp]
+\centering
+\caption{Integrated first-pass results}
+\label{tab:integrated_results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llllr}
+\toprule
+Block & Hyp. & Outcome & Coefficient & Estimate \\
+\midrule
+Stack Overflow core & H1 & SO: log(1 + questions) & AI answerability x Post ChatGPT & -0.301*** (0.070) \\
+Stack Overflow core & H1 & SO: log(1 + answers) & AI answerability x Post ChatGPT & -0.254*** (0.066) \\
+Stack Overflow core & H1/H3 & SO: answer rate & AI answerability x Post ChatGPT & 0.021*** (0.008) \\
+Stack Overflow core & H3 & SO: code share & AI answerability x Post ChatGPT & -0.023*** (0.005) \\
+Stack Overflow core & H2/H3 & SO: short-code share & AI answerability x Post ChatGPT & -0.034*** (0.005) \\
+Stack Overflow trend-robust & H1 & SO: log(1 + questions) & AI answerability x Post ChatGPT & -0.331*** (0.060) \\
+Stack Overflow trend-robust & H1 & SO: log(1 + answers) & AI answerability x Post ChatGPT & -0.327*** (0.053) \\
+Stack Overflow user heterogeneity & H1/H2 & SO: log(1 + questions) & AI answerability x Post ChatGPT & -0.173*** (0.054) \\
+Stack Overflow user heterogeneity & H2 & SO: log(1 + questions) & AI answerability x Post ChatGPT x new user & -0.089 (0.086) \\
+Stack Overflow user heterogeneity & H1/H2 & SO users: log(1 + unique users) & AI answerability x Post ChatGPT & -0.149*** (0.049) \\
+Stack Overflow user heterogeneity & H2 & SO users: log(1 + unique users) & AI answerability x Post ChatGPT x new user & -0.081 (0.077) \\
+GitHub extension & H4 & GitHub: log(1 + first-seen actors) & SO dependence x Post ChatGPT & 0.042 (0.052) \\
+GitHub extension & H4 & GitHub: log(1 + first-seen PR actors) & SO dependence x Post ChatGPT & 0.051* (0.030) \\
+GitHub extension & H4 & GitHub: log(1 + first-seen issue actors) & SO dependence x Post ChatGPT & 0.014 (0.052) \\
+\bottomrule
+\end{tabular}
+}
+\begin{minipage}{0.96\linewidth}
+\footnotesize
+Notes: Stars denote p $<$ 0.10, p $<$ 0.05, and p $<$ 0.01. All tables are generated from reproducible scripts. GitHub estimates are exploratory because language-level inference has few clusters.
+\end{minipage}
+\end{table}

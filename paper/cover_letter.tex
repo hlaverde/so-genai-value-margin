@@ -1,0 +1,178 @@
+\documentclass[12pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\signature{Henry Laverde-Rojas \\ Carlos Laverde-Rodriguez}
+\address{Programa de Econom\'ia \\ Universidad Militar Nueva Granada \\ Campus, Colombia}
+
+\begin{document}
+
+\begin{letter}{Editors-in-Chief \\ \emph{Decision Support Systems} \\ Elsevier}
+
+\opening{Dear Editors,}
+
+I am pleased to submit \emph{``The Post-ChatGPT Contraction
+Reaches the Crowd-Validated Margin: A Within-Tag Triple
+Difference and a Value-Calibrated Early-Warning System for
+Stack Overflow''} for consideration at \emph{Decision Support
+Systems}.
+
+\noindent\textbf{Problem and decision relevance.}\\
+Public question-and-answer communities such as Stack Overflow
+are both a knowledge resource for millions of practitioners
+and the training substrate for the very generative-AI systems
+that now compete with them. Recent work establishes that
+Q\&A activity contracted after the November 2022 ChatGPT
+release (Burtch, Lee, and Chen 2024; del R\'io-Chanona,
+Laurentsyeva, and Wachs 2024, $\sim$15--25\% declines) and
+that the surviving question population is, on average, of
+higher quality (Xue et al.\ 2026). A platform manager---or an
+AI provider monitoring the health of its training
+corpus---reading those two facts together might conclude that
+generative AI prunes only low-value posts that public Q\&A
+would not have retained as durable artefacts. If true, no
+intervention is warranted. The decision-relevant question,
+which an aggregate quantity-and-quality decomposition cannot
+answer, is whether the contraction also reaches the
+\emph{high-value, crowd-validated} posts that sustain the
+platform's downstream knowledge function---and, if so, how a
+manager who observes only activity counts should detect and
+triage the loss. This paper answers both the measurement
+question and the decision question.
+
+\noindent\textbf{Contributions.}\\
+\begin{enumerate}
+\item \emph{The strict benign-pruning reading is rejected at
+the within-tag value margin.} A single pre-specified shape
+test over mutually exclusive net-score bins returns a
+negative average displacement across the crowd-validated
+range ($\hat\beta = -0.167$, $p<10^{-4}$) that is roughly
+constant over the low-to-mid bins (score $0$, $1$, $2$:
+$-0.21$, $-0.20$, $-0.21$) and attenuates only at the rare
+elite tail (slope $p = 2\times10^{-4}$). The displacement is
+therefore not confined to score-zero posts.
+\item \emph{A within-tag, within-question-type triple
+difference} at the (tag $\times$ week $\times$ question-type)
+cell isolates the LLM-substitutability slice of the
+aggregate decline, reported under \emph{two co-primary}
+treatment measures---a historical answerability index
+($-0.108$, $p=0.021$) and an embedding-based score that uses
+no historical features ($-0.119$, $p<0.001$)---so the result
+cannot be dismissed as historical popularity relabelled.
+\item \emph{A value-calibrated early-warning system---the
+decision-support artefact.} We let the data choose the
+detection signal: out of sample on the full 100-tag panel,
+the activity-decline metric a platform already tracks
+predicts realised 2025 high-value erosion at AUC $0.98$,
+while a value-weighted detector reaches only $0.57$. The
+system therefore \emph{detects} on activity, and the paper's
+value-margin estimates serve as the \emph{calibration} that
+converts an activity alert into the high-value posts at risk
+that managers actually care about. The calibration earns its
+place at the intensive (triage) margin: allocating
+intervention effort by the calibrated high-value-at-risk
+nearly attains the perfect-foresight optimum, whereas
+allocating by raw activity leaves up to $5\%$ of the
+protectable high-value flow unprotected. A highly persistent
+composition flag ($\rho = 0.90$ from 2024 into the new 2025
+data) classifies whether a tag's decline is
+value-disproportionate, informing intervention \emph{type}.
+\end{enumerate}
+
+\noindent\textbf{Fit with \emph{Decision Support Systems}.}\\
+The paper's core deliverable is a decision aid, evaluated as
+one. The early-warning system is built from signals a
+platform already collects, is calibrated on identified
+causal estimates rather than correlations, and is assessed by
+its out-of-sample detection performance and by a
+value-of-information / regret analysis that quantifies the
+cost of the naive activity-only policy a manager would
+otherwise use. This is squarely the journal's remit:
+analytics and AI in support of managerial decisions, with an
+explicit account of the decision the tool improves and the
+loss it averts. The empirical contribution (the within-tag
+value-margin estimate) is what makes the calibration
+trustworthy; the artefact is what makes it actionable.
+
+\noindent\textbf{Identification, stated honestly.}\\
+Formal pre-trend tests reject \emph{exact} parallel trends,
+so we do not claim a standalone natural experiment: the
+estimates are conditional post-ChatGPT associations aligned
+with the LLM-substitutability mechanism. Their credibility
+rests on a conjunction of diagnostics that fail under
+different threats---a sign reversal between the real cutoff
+and 29 rolling pre-period placebos, a positive (placebo)
+June 2022 GitHub Copilot cutoff, monotone growth of the
+event-study coefficient with no reversion, and a HonestDiD
+$\Delta^{\text{RM}}$ sensitivity bound under the full
+event-study variance--covariance matrix with a breakdown at
+$\bar M = 0.75$, which we read as a \emph{moderate} signal
+and say so. The estimate also survives a 32-cell
+pre-specified specification curve (all negative, all
+significant), PPML, two-way clustering, and a wild cluster
+bootstrap. Because two one-off 2023 platform events (a
+data-licensing change and a moderator strike) overlap the
+early post-period, we treat a donut difference-in-differences
+that excludes the affected weeks as the \emph{primary} test
+against that confound ($-0.110$, $p=0.022$). Finally,
+re-estimating on the \emph{full 100-tag panel extended
+through 2025} strengthens the triple difference to $-0.172$
+($p=0.002$) and the quarterly association deepens to $-0.68$
+by the end of 2025 with no reversion, removing the reading
+that the effect reflects a transient late-2024 episode.
+
+\noindent\textbf{Scope discipline.}\\
+We resist overclaiming. The identified channel is bounded at
+$\sim$4\% of post-period activity (and $\sim$5\% of a
+trend-implied shortfall); a five-transition support-post
+funnel translates it into a cumulative shortfall of
+$\sim$28{,}000 accepted, non-closed, non-negative-score posts
+(about 40\% of the activity shortfall). The estimate is an
+innovation \emph{input} rather than an outcome, and the paper
+states plainly what the magnitude does \emph{not} support
+(welfare, innovation outcomes, or generalisation beyond
+programming Q\&A). A conditional-resolvability null under
+fine-grained fixed effects shows that the descriptively
+documented quality improvement is consistent with selection
+into the survivor population rather than within-cell
+upgrading. All references have been verified against
+Crossref/DOI.
+
+\noindent\textbf{Reproducibility and structure.}\\
+The full collection-and-analysis pipeline is reproducible
+from public, zero-budget data: manual Stack Exchange Data
+Explorer exports through May 2023 and the public Stack
+Exchange API v2.3 thereafter (including the 2025 extension),
+with byte-level validation across the source migration on the
+overlap period. The manuscript is self-contained within the
+journal's 34-page limit (double-spaced, 1-inch margins); to keep
+it within that limit the full robustness battery, the per-bin
+value-distribution detail, the mechanism and
+classifier-validation detail, the descriptive counterfactual,
+and the literature-positioning table are provided in the public
+replication package rather than as journal-hosted supplementary
+material. All Python scripts, panels, tables, figures, and the
+\LaTeX{} source are documented in
+\texttt{docs/replication\_notes.md} and available at
+\url{https://github.com/hlaverde/so-genai-value-margin}.
+
+\noindent\textbf{Suggested expertise.}\\
+Referees with expertise in decision-support and early-warning
+systems, analytics for platform governance, the economics of
+generative AI, online knowledge communities, or
+quasi-experimental methods (triple difference, pre-trend
+sensitivity bounds, cluster-robust inference, specification
+curve analysis) would be well positioned to evaluate the
+work.
+
+\noindent\textbf{Disclosures.}\\
+The work is single-authored and has not been submitted to any
+other journal. There are no conflicts of interest. No paid
+APIs, restricted institutional data, or external funding were
+used.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}

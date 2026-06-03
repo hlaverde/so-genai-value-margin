@@ -1,0 +1,172 @@
+\label{sec:identification_body}
+
+We treat the November 30, 2022 public release of ChatGPT as a
+shock to the marginal cost of obtaining private, conversational
+programming assistance. We do not claim it was the only
+technology changing at that date; the narrower, verifiable claim
+is that it is the largest, most visible, and most
+contemporaneously discussed event reducing that cost for users
+whose questions overlap the range answerable by a frontier LLM.
+Diffusion was fast and well-documented
+\citep{eloundou2024gpts,brynjolfsson2025generative,peng2023impact,cui2024effects}.
+
+\paragraph{What the design identifies.}
+Formal pre-trend tests reject \emph{exact} parallel trends in
+the $\text{AI}\times\text{Sub}$ gradient. We therefore do
+\emph{not} claim a standalone natural experiment; the object we
+estimate is a \emph{conditional post-ChatGPT association}
+aligned with the LLM-substitutability mechanism. Its
+credibility rests on a \emph{conjunction} of four diagnostics,
+each failing under a different threat, so that no single
+alternative survives all four: (i) the \emph{sign reversal}
+between the real cutoff ($\hat\beta<0$) and 29 rolling
+pre-period placebos ($\hat\beta>0$), which a smooth
+continuation of the pre-trend cannot produce; (ii) the
+\emph{monotone growth} of the event-study coefficient from
+$-0.06$ to $-0.54$ over eight post-quarters (and on to $-0.68$
+with the 2025 data), which a fading COVID-era rebound would
+not generate; (iii) a \emph{pre-trend-matched} design that
+restricts the comparison to tags with similar pre-treatment
+slopes and returns $-0.129$ ($p=0.012$); and (iv) a HonestDiD
+$\Delta^{\text{RM}}$ sensitivity bound under the full
+event-study VCV, under which the estimate remains
+distinguishable from zero up to a breakdown of $\bar M=0.75$.
+We read $\bar M=0.75$ as a \emph{moderate} signal and lean on
+the sign-reversal, monotonicity, and matched-design
+evidence---none of which requires full-sample smoothness---to
+carry the weight exact parallel trends cannot.
+
+\subsection{Baseline DDD specification}\label{ssec:id_ddd_main}
+
+The estimating equation operates at the
+(tag $t$, week $w$, question type $k$) level:
+\begin{equation}
+\label{eq:ddd}
+\begin{aligned}
+\log(1+Q_{t,w,k}) =\;& \beta_{\text{DDD}}\,(\text{AI}_t \cdot \text{Post}_w \cdot \text{Sub}_k) \\
+& + \gamma_1 (\text{AI}_t \cdot \text{Post}_w) + \gamma_2 (\text{AI}_t \cdot \text{Sub}_k) + \gamma_3 (\text{Post}_w \cdot \text{Sub}_k) \\
+& + \alpha_{t,k} + \delta_w + \varepsilon_{t,w,k},
+\end{aligned}
+\end{equation}
+with $\text{Post}_w = \mathbf{1}\{w \geq \text{2022-11-30}\}$,
+$\text{Sub}_k \in \{0,1\}$ indicating substitutable question
+types, $\alpha_{t,k}$ tag-by-question-type fixed effects, and
+$\delta_w$ calendar-week fixed effects (261 weeks). Standard
+errors are clustered by tag (CR1; 100 clusters)
+\citep{cameron2008wild}. We estimate (\ref{eq:ddd}) under two
+\emph{co-primary} treatment measures: a structural answerability
+index built from four pre-treatment, non-text tag features
+($-0.108$, $p=0.021$), and an embedding-based answerability
+score that uses \emph{no} historical features and so is not a
+relabelling of popularity ($-0.119$, $p<0.001$). We require the
+result under both. Under the within-tag parallel-trends
+restriction, $\beta_{\text{DDD}}$ estimates the differential
+post-ChatGPT change in substitutable-type questions, relative
+to non-substitutable questions in the same tags, per unit of
+pre-treatment AI answerability.
+
+\subsection{Pre-trends, placebos, and sensitivity}\label{ssec:id_event_study}\label{ssec:id_honest_did}
+
+An event study with quarterly bins (reference bin $-1$) shows a
+monotone post-period pattern, $-0.06$ at $T{+}0$ to $-0.54$ at
+$T{+}8$, with pre-period coefficients negative on average but
+shrinking toward zero as the cutoff approaches; formal tests
+nonetheless reject exact parallel trends. Under the official
+HonestDiD $\Delta^{\text{RM}}$ implementation with the full
+cluster-robust VCV, the unadjusted CI is $[-0.100,-0.026]$,
+remains $[-0.136,-0.010]$ at $\bar M=0.5$, and first contains
+zero at $\bar M=0.75$---a moderate signal. Two placebo
+exercises complement the smoothness-free reading: five
+conventional pre-period cutoffs return \emph{positive}
+coefficients ($+0.059$ to $+0.067$, all $p<0.012$), and a
+29-step rolling-placebo sweep (mean $+0.057$) contains no
+cutoff as negative as the real one. Because exact parallel
+trends are rejected, we also treat a \emph{pre-trend-matched}
+design as central: restricting to the 75 tags whose
+pre-treatment slope lies within one IQR of the median returns
+$-0.129$ ($p=0.012$), and the effect is \emph{absent} precisely
+where a pre-trend artefact would be strongest (the
+steepest-declining quartile gives $+0.055$, $p=0.58$), the
+opposite of a mean-reversion story. Three inference variants
+(two-way clustering \citep{cameron2011robust}, a wild cluster
+bootstrap with 9{,}999 replicates \citep{cameron2008wild}, and
+PPML on raw counts \citep{santossilva2006log}) leave the
+conclusion intact. Full event-study, placebo, sensitivity, and
+matched-design tables are in the replication package.
+
+\subsection{Threats to identification}\label{ssec:id_threats}
+
+\paragraph{COVID-driven differential mean reversion.}
+If the estimate were mean reversion of a transient pandemic
+boom in substitutable categories, the post-period coefficient
+should fade and not accelerate. The opposite holds: the
+event-study coefficient grows monotonically and steepens in
+later bins, which a 2020--2021 rebound cannot produce.
+
+\paragraph{Co-timed Stack Overflow events.}
+Forces other than LLM diffusion that also post-date the cutoff
+(the December 2022 AI-content ban, the mid-2023 moderator
+strike, the May 2024 OpenAI licence) could in principle drive
+the decline. The primary test is a donut specification dropping
+the strike window (June--August 2023): the estimate is
+essentially unchanged ($-0.110$, $p=0.022$). The December 2022
+ban is coincident with the cutoff and absorbed by the week
+fixed effects. Window-truncation estimates point \emph{against}
+a one-off confound---small and imprecise early
+($\hat\beta=-0.006$, $p=0.83$, ending before the strike) and
+reaching magnitude later, as gradual diffusion predicts---though
+this does mean onset cannot be dated to the release alone within
+the original window.
+
+\paragraph{The full-panel 2025 extension.}
+The sharper discriminator is what happens \emph{after} these
+one-off events. We collected calendar-2025 questions for all
+100 tags from the public Stack Exchange API (registered key;
+0 failed windows, 0 page-cap flags) and re-estimated on the
+full 2020--2025 panel (186{,}188 cells;
+Table~\ref{tab:extension_2025}), treated as a validation
+extension of the 2020--2024 main panel. The pre-2025 portion
+reproduces the baseline ($-0.106$); adding 2025 strengthens the
+estimate to $-0.172$ ($p=0.002$), and the quarterly event-study
+coefficient deepens monotonically across all of 2025, from
+$-0.428$ (T$+$8) to $-0.680$ by Q4 2025 (T$+$12), with no
+reversion. A transient mid-2023 episode would not produce an
+association that grows for twelve post-treatment quarters;
+sustained diffusion would. Exact parallel trends remain
+rejected, so this is not a natural experiment, but the
+full-panel evidence strongly disfavours the late-emergence and
+co-timed-event readings.
+
+\input{tables/table_extension_2025}
+
+\paragraph{Single non-substitutable control.}
+The binary control has two categories, but only
+version-environment-specific behaves as a clean placebo; the
+declared boundary category advanced-architecture shows a
+sizeable decline ($\approx-0.16$). Two points discipline this.
+The version-environment-specific null is \emph{informative},
+not merely underpowered ($-0.007$, 95\% CI $[-0.099,+0.085]$,
+MDE $\approx0.13$): a substitutable-sized decline ($-0.10$ to
+$-0.29$) would very likely have been detected and was not. And
+the \emph{continuous} embedding substitutability score sidesteps
+the dichotomy entirely, needing no clean-control category, and
+still returns $-0.039$ ($p=0.004$); we treat it as the primary
+safeguard. Re-assigning each category in turn as the sole
+control (full table in the replication package) leaves the
+estimate negative and stable under theory-led choices
+(version-environment-specific as control: $-0.130$) and flips
+sign only under placebo assignments that designate a
+\emph{substitutable} category as the control---the
+misspecification the design is built to avoid.
+
+\paragraph{Other threats.}
+The aggregate question count fell from 2.7M (2020) to 0.5M
+(2024); the week fixed effect absorbs this level decline, and
+$\beta_{\text{DDD}}$ is identified from \emph{differential}
+movement, not levels. The pre-treatment window was not LLM-free
+(Codex, Copilot preview, GPT-3 API), which biases the estimate
+\emph{toward zero}, so our numbers are likely conservative with
+respect to the post-2022 increment. A user-composition shift is
+absorbed by tag fixed effects and the Post$\times$AI interaction
+is null, so any composition shift is uniform across the tag
+space rather than concentrated where answerability is highest.

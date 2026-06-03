@@ -1,0 +1,43 @@
+\label{sec:validation_body}
+
+The substitutable / non-substitutable binary classification is
+the central measurement decision. The baseline classifier is
+heuristic (title-keyword patterns plus body-length and
+code-block features, mapped to seven categories then collapsed to
+a binary label). We validate it against two independent
+sentence-embedding classifiers on a stratified random sample of
+10{,}000 questions: \texttt{all-MiniLM-L6-v2} and
+\texttt{all-mpnet-base-v2} (different architectures and training
+corpora, so their mutual agreement is a stronger signal than
+either with the heuristic), each assigning questions to the
+nearest category centroid in cosine space.
+
+\subsection{Agreement and the high-agreement
+subsample}\label{ssec:val_kappa}\label{ssec:val_high_agree}\label{ssec:val_protocol}\label{ssec:val_crosstab}\label{ssec:val_implications}
+
+The two embedding classifiers agree with each other in the
+substantial range (binary Cohen's $\kappa=0.67$; 7-way $0.68$),
+above either's agreement with the heuristic ($\kappa=0.44$--$0.46$
+binary), and the multi-rater Fleiss' $\kappa$ is $0.52$ for the
+binary label and $0.40$ for the seven-way category---moderate
+rather than strong. For $70.5\%$ of the sample all three
+classifiers agree on the binary label, and within this
+high-agreement subsample the DDD point estimate is statistically
+indistinguishable from the full-sample baseline ($\approx-0.11$),
+so the result is not driven by the heuristic's disagreement
+cases. The heuristic is more conservative than the embedding
+majority (labelling $28.6\%$ versus $22.4\%$ non-substitutable),
+which under-counts non-substitutable cells and if anything
+attenuates $\beta_{\text{DDD}}$. The substitutability concept
+thus has reasonably stable semantic content across embeddings,
+while the noisier seven-way split ($\kappa=0.40$) means the
+question-type decomposition (\S\ref{ssec:mech_by_type}) should be
+read as illustrative of the gradient---consistent with the
+negative advanced-architecture coefficient---rather than as
+precise category-by-category estimates. We retain the
+embedding-validated heuristic as the funnel-building baseline and
+use the continuous embedding score as a co-primary check; a
+contemporary-LLM scorer would embed a specific model generation
+into the measure and introduce circularity, which the zero-budget
+design avoids. Full $\kappa$ tables and the cross-tabulation are
+in the replication package.

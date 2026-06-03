@@ -1,0 +1,26 @@
+\begin{table}[ht]
+\centering
+\caption{Robustness to co-timed Stack Overflow events. The primary test
+is the \emph{donut} specification that drops the moderation-strike window
+(June--August 2023): the estimate is essentially unchanged ($-0.110$ vs
+the $-0.108$ baseline), so the strike is not driving it. The
+window-truncation rows are reported for completeness and read in the
+opposite direction from a confound: the association is small in the early
+post-period and reaches its magnitude later, the pattern expected of
+gradual LLM diffusion rather than of a one-off 2023--2024 event. The
+December 2022 AI-content ban is essentially coincident with the cutoff
+and cannot be separately identified.}
+\label{tab:late_confounders}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Specification & $\hat\beta_{\text{DDD}}$ & SE & $p$ \\
+\midrule
+Baseline (2020--2024) & $-0.108$ & 0.046 & 0.021 \\
+\textbf{Donut: drop strike weeks (Jun--Aug 2023)} & $\mathbf{-0.110}$ & 0.046 & 0.022 \\
+\midrule
+Window ends before strike (Jun 2023) & $-0.006$ & 0.026 & 0.832 \\
+Window ends before OpenAI licence (May 2024) & $-0.068$ & 0.038 & 0.076 \\
+\bottomrule
+\end{tabular}
+\end{table}

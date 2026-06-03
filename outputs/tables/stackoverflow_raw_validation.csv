@@ -1,0 +1,4 @@
+file,exists,rows,bytes,sha256,missing_columns,extra_columns
+stackoverflow_tag_week.csv,True,43003,3807613,f0610b2b7ecf1786e3b89aa8e5146deca6fc4b2eadc511cd823ca537d94ea153,,
+stackoverflow_user_tag_week.csv,False,,,,"user_id,tag,week_start,reputation_initial,user_age_days,posts,questions,answers",
+stackoverflow_post_complexity.csv,False,,,,"post_id,creation_date,tag,body_length,has_code,num_tags,answer_count,has_accepted_answer,score",

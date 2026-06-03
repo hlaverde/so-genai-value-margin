@@ -1,0 +1,31 @@
+\begin{table}[ht]
+\centering
+\caption{The value-calibrated early-warning report (artefact output),
+top tags by calibrated high-value-at-risk. ``Activity at risk'' is the
+detection layer (implied displaced activity); ``HV at risk'' is the
+calibration layer (implied displaced high-value posts, the
+decision-relevant quantity); ``VtD'' with its bootstrap interval is the
+secondary composition flag, which fires ($\checkmark$) when the whole
+interval exceeds the benign-pruning benchmark $\theta=0.196$. Note the
+division of labour: the largest high-value exposure is in the
+high-volume tags (\texttt{python}, \texttt{javascript}), which the
+activity detector already surfaces; the composition flag instead marks
+value-disproportionate tags (\texttt{dataframe}, \texttt{pandas},
+\texttt{regex}, \texttt{r}) regardless of size, informing intervention
+\emph{type} rather than whether to act.}
+\label{tab:vtd_monitor}
+\small
+\begin{tabular}{lrrcl}
+\toprule
+Tag & Activity at risk & HV at risk & VtD (95\% CI) & Flag \\
+\midrule
+\texttt{python}     & 36{,}028 & 7{,}326 & 0.203 [0.20, 0.21] & \checkmark \\
+\texttt{javascript} & 17{,}112 & 2{,}933 & 0.171 [0.17, 0.18] & \\
+\texttt{pandas}     &  3{,}056 & 1{,}055 & 0.345 [0.34, 0.35] & \checkmark \\
+\texttt{r}          &  2{,}819 &   906   & 0.321 [0.31, 0.33] & \checkmark \\
+\texttt{dataframe}  &  2{,}017 &   773   & 0.383 [0.37, 0.39] & \checkmark \\
+\texttt{sql}        &  2{,}683 &   452   & 0.168 [0.16, 0.17] & \\
+\texttt{regex}      &  1{,}052 &   345   & 0.328 [0.31, 0.34] & \checkmark \\
+\bottomrule
+\end{tabular}
+\end{table}

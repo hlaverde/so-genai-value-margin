@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\caption{HonestDiD $\Delta^{\text{RM}}$ sensitivity bounds with the \emph{full} cluster-robust variance-covariance matrix of the event-study coefficients. Computed by refitting the original quarterly event study (\S\ref{ssec:dynamics_event}) with CR1 (Liang--Zeger) clustering on tag and extracting the full $\Sigma$. Robust 95\% confidence intervals reported for each value of the relative-magnitude bound $\bar M$.}
+\label{tab:honestdid_fullvcv}
+\small \setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrrl}
+\toprule
+$\bar M$ & Robust LB & Robust UB & Status \\
+\midrule
+Original (no relaxation) & -0.1003 & -0.0256 & excludes 0 \\
+$\bar M = 0.00$ & -0.0977 & -0.0287 & excludes 0 \\
+$\bar M = 0.25$ & -0.1168 & -0.0211 & excludes 0 \\
+$\bar M = 0.50$ & -0.1360 & -0.0096 & excludes 0 \\
+$\bar M = 0.75$ & -0.1589 & 0.0096 & contains 0 \\
+$\bar M = 1.00$ & -0.1857 & 0.0287 & contains 0 \\
+$\bar M = 1.50$ & -0.2317 & 0.0747 & contains 0 \\
+$\bar M = 2.00$ & -0.2815 & 0.1245 & contains 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

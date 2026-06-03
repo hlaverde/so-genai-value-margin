@@ -1,0 +1,160 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makecell}
+\usepackage{setspace}
+\usepackage{adjustbox}
+\emergencystretch=3em
+\hyphenpenalty=200
+\tolerance=600
+\sloppy
+\usepackage[round,authoryear]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+\usepackage{xr}
+\externaldocument{main}
+\onehalfspacing
+\graphicspath{{figures/}}
+
+% Online-appendix float numbering: A1, A2, ... (distinct from main).
+\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\thefigure}{A\arabic{figure}}
+\renewcommand{\thesection}{A.\arabic{section}}
+\setcounter{section}{0}
+
+\title{Online Appendix to\\
+``The Post-ChatGPT Contraction Reaches the Crowd-Validated
+Margin: A Within-Tag Triple Difference and a Value-Calibrated
+Early-Warning System for Stack Overflow''}
+\author{Henry Laverde}
+\date{\today}
+
+\begin{document}
+\maketitle
+\noindent This Online Appendix collects the full robustness battery,
+the value-distribution detail tables, the mechanism and
+classifier-validation detail, the descriptive counterfactual, and the
+literature-positioning table referenced in the main paper. Section,
+table, and figure numbers are prefixed ``A''. References to the main
+text (e.g.\ its baseline coefficient and main tables) are
+cross-document hyperlinks.
+
+\section{Full robustness battery}\label{app:robustness}
+\input{sections/appendix_robustness}
+\input{tables/rp_robustness_table}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/rp_specification_curve.png}
+\caption{Specification curve over the full 32-cell
+factorial grid. All coefficients negative; all
+significant at $p<0.05$.}
+\label{fig:speccurve}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.78\textwidth]{figures/rp_rolling_placebo_distribution.png}
+\caption{Rolling-placebo distribution. 29 placebo cutoffs
+every four weeks across 2020-07-01 to 2022-09-01.
+Vertical line: real cutoff coefficient $-0.138$.}
+\label{fig:rolling_placebo}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.70\textwidth]{figures/binscatter_ai_effect.png}
+\caption{Tag-level $\Delta\log(1+Q)$ (post minus pre) against
+pre-treatment AI answerability ($n=100$ tags).}
+\label{fig:binscatter}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/gharchive_first_seen_actors_by_type_weekly.png}
+\caption{First-seen GitHub actors by event type in the entry-oriented
+GH Archive sample, 2021--2024.}
+\label{fig:github_first_seen}
+\end{figure}
+
+\section{Value-distribution detail}\label{app:value_detail}
+This appendix reports the per-bin, threshold, and robustness detail
+behind the value-margin result of the main text
+(\S\ref{ssec:results_value_weighted}).
+\input{tables/table_score_bin_artefact_effects}
+\input{tables/table_score_threshold_sensitivity}
+\input{tables/table_romano_wolf}
+\input{tables/table_voting_normalised_highvalue}
+\input{tables/table_clip_sensitivity}
+\input{tables/table_funnel_heterogeneity_by_qtype}
+\input{tables/table_decline_decomposition}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig_decline_decomposition.pdf}
+\caption{Decomposition of the post-ChatGPT shortfall.
+Dark bar (top): residual outside the
+DDD-estimated channel. Red bar (bottom): DDD-estimated
+channel. The DDD-estimated shortfall is negative and
+statistically significant under the maintained
+assumptions; the residual is a descriptive benchmark,
+not an alternative causal estimate, and its size simply
+reflects how much of the aggregate decline the
+within-tag DDD does not estimate.}
+\label{fig:decline_decomposition}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/fig_funnel_heterogeneity_by_qtype.pdf}
+\caption{Funnel heterogeneity by question type. Each
+panel reports $\hat\beta_k$ on
+$\text{AI}\cdot\text{Post}$ within question type $k$
+(tag and week fixed effects, tag-clustered CIs). Red:
+substitutable; dark: non-substitutable. The
+version-environment-specific category is null across all
+funnel stages.}
+\label{fig:funnel_heterogeneity_by_qtype}
+\end{figure}
+
+\section{Mechanism detail: resolvability and survivor
+composition}\label{app:mechanism_detail}
+\input{tables/table_resolvability_vs_quality}
+\input{tables/table_prepost_resolvability_by_ai_group}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig_resolvability_coefficients.pdf}
+\caption{DDD coefficients on resolvability and quality
+shares at the (tag, week, question-type) cell. Weighted
+OLS with (tag $\times$ question type) and week fixed
+effects; tag-clustered 95\% CIs. Five of six estimates
+are statistically indistinguishable from zero; closed
+share rises by $+0.005$ ($p<0.001$).}
+\label{fig:resolvability}
+\end{figure}
+
+\section{Classifier and treatment-measurement
+detail}\label{app:validation_detail}
+\input{tables/table_embedding_validation}
+\input{tables/table_embedding_partial_regression}
+\input{tables/table_revealed_answerability_validation}
+\input{tables/table_auc_stratum}
+
+\section{Descriptive counterfactual: linear trend
+extrapolation}\label{app:counterfactual}
+\input{sections/appendix_counterfactual}
+
+\section{Positioning against recent literature}\label{app:positioning}
+\input{tables/table_literature_positioning}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

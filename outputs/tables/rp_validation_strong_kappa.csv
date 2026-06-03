@@ -1,0 +1,10 @@
+comparison,kappa
+cohen_7way_heuristic vs minilm,0.27987861811391224
+cohen_7way_heuristic vs mpnet,0.2633053221288515
+cohen_7way_minilm vs mpnet,0.6789562528269106
+cohen_binary_heuristic vs minilm,0.45545977011494254
+cohen_binary_heuristic vs mpnet,0.43731179367272477
+cohen_binary_minilm vs mpnet,0.6721829733163913
+fleiss_binary_3raters,0.5218873740771058
+fleiss_7way_3raters,0.40500359898661104
+share_3raters_agree_binary,0.7049819927971188

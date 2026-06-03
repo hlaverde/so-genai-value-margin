@@ -1,0 +1,149 @@
+This appendix contains the full robustness battery. The
+main text retains only the consolidated
+Table~\ref{tab:rp_robustness} (printed once, in
+\S\ref{ssec:main_baseline}); the design choices and
+interpretation discussed in
+\S\ref{sec:robustness} are reported here in full detail.
+
+\subsection{Alternative AI-answerability
+measures}\label{app:rob_ai_measures}
+
+The four pre-treatment AI-answerability measures and the
+DDD coefficient each delivers are:
+
+\begin{center}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Measure & $\hat\beta$ & SE & $p$ & $N$ \\
+\midrule
+Structural index (baseline) & $-0.108$ & 0.046 & 0.021 &
+164{,}351 \\
+$z$-score composite          & $-0.138$ & 0.052 & 0.008 &
+164{,}351 \\
+PCA composite                & $-0.045$ & 0.020 & 0.024 &
+164{,}351 \\
+Quartile rank                & $-0.210$ & 0.074 & 0.005 &
+164{,}351 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The structural variant is the most conservative; the
+quartile rank is the largest in absolute magnitude
+(coarsening adds variance to the contrast).
+
+\subsection{Sample restrictions}\label{app:rob_samples}
+
+Top-50 tags by pre-period volume: $-0.207$ ($p=0.026$).
+Top-75 tags: similarly negative coefficient. Interquartile
+band on pre-treatment slope (75 tags closest to median
+slope): $-0.155$ ($p=0.009$). Each of the four quartiles of
+pre-treatment slope returns a negative coefficient:
+quartile 1 (steepest decline) $-0.06$;
+quartile 2 $-0.19$;
+quartile 3 $-0.08$;
+quartile 4 (steepest growth) $-0.32$. The result is not
+driven by tags with extreme pre-trends.
+
+Leave-one-out / jackknife: dropping the top-1 (python),
+top-5, top-10, and top-20 tags returns coefficients
+between $-0.166$ and $-0.196$. Jackknifing each of the
+top-10 tags individually returns a range
+$[-0.166, -0.136]$. The aggregate result is not an
+artefact of a small number of large communities.
+
+\subsection{Alternative outcomes}\label{app:rob_outcomes}
+
+Replacing the outcome by $\log(1+\text{unique users})$
+returns $\hat\beta=-0.133$ ($p=0.010$), confirming that the
+substitutability gradient also operates on the count of
+distinct authors. Counts-based estimation via PPML
+\citep{santossilva2006log} returns $\hat\beta=-0.098$
+($p=0.027$). Fractional tag counts---weighting each
+question by $1/n_{\text{top-100 tags}}$---return
+$\hat\beta=-0.134$ ($p=0.005$).
+
+\subsection{Inference}\label{app:rob_inference}
+
+CR1 clustering by tag: SE $=0.052$. Two-way clustering
+on tag and week \citep{cameron2011robust}: SE $=0.052$
+(within-tag serial correlation dominates the variance
+budget). Wild cluster bootstrap with 9{,}999 Rademacher
+replicates and the null imposed \citep{cameron2008wild}:
+$p < 0.005$.
+
+\subsection{Continuous-substitutability
+specification}\label{app:rob_continuous}
+
+Replacing the binary substitutable indicator with a
+continuous embedding-derived substitutability score
+returns
+$\hat\beta = -0.039$ ($p=0.004$) under the structural
+answerability measure and $-0.053$ ($p=0.0009$) under the
+$z$-score composite. The continuous estimate is
+approximately one-third the size of the binary estimate
+(expected: the continuous score shrinks the substitutable
+vs.\ non-substitutable contrast).
+
+\subsection{Pre-trend sensitivity
+bounds}\label{app:rob_honest}
+
+The sensitivity exercise of \S\ref{ssec:id_honest_did}
+yields the following robust 95\% confidence sets under
+increasing $\bar M$ (the relative-magnitude bound on the
+post-period deviation from parallel trends, in units of
+the largest pre-period deviation):
+
+\begin{center}
+\small
+\begin{tabular}{rrl}
+\toprule
+$\bar M$ & Robust 95\% CI & Contains 0? \\
+\midrule
+0.00 & $[-0.098, -0.029]$ & No \\
+0.25 & $[-0.117, -0.021]$ & No \\
+0.50 & $[-0.136, -0.010]$ & No \\
+0.75 & $[-0.159, +0.010]$ & Yes (breakdown) \\
+1.00 & $[-0.186, +0.029]$ & Yes \\
+1.50 & $[-0.232, +0.075]$ & Yes \\
+2.00 & $[-0.281, +0.124]$ & Yes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Breakdown occurs at $\bar M = 0.75$ under the official
+HonestDiD $\Delta^{\text{RM}}$ implementation with the
+full cluster-robust event-study VCV
+(\S\ref{ssec:id_honest_did}). Earlier versions of this
+paper reported a bespoke calculation with a different
+threshold; the full-$\Sigma$ \texttt{honestdid}-based
+bound is the reference value we use going forward.
+
+\subsection{Summary of what the robustness rules
+out}\label{app:rob_summary}
+
+In combination, the robustness battery rules out:
+\begin{itemize}
+\item that the result is an artefact of one particular AI
+measure (all four are negative);
+\item that the result is driven by extreme tags
+(leave-one-out, IQR band, slope-quartile stratification);
+\item that the result is a counting artefact of multi-tag
+questions (fractional counts);
+\item that the result is a clustering or distributional
+artefact (two-way clustering, wild bootstrap, PPML);
+\item that the result is an extrapolation of pre-trends
+(HonestDiD $\Delta^{\text{RM}}$ full-VCV breakdown
+$\bar M = 0.75$, placebo cutoffs with opposite sign,
+rolling placebos);
+\item that the result is driven by the GitHub Copilot
+release (Copilot has the opposite sign);
+\item that the result is sensitive to specific specification
+choices (100\% negative across 32 cells).
+\end{itemize}
+What the robustness does \emph{not} rule out is the
+concern that the binary substitutability classification is
+heuristic. We address this directly in
+\S\ref{sec:validation} with three independent classifiers
+and Fleiss' $\kappa$.

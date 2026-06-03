@@ -1,0 +1,501 @@
+question_id,title,body_length,has_code,heuristic_type,minilm_type,mpnet_type,heuristic_sub,minilm_sub,mpnet_sub,all_three_agree_binary,embedding_majority_sub,zeroshot_label,zeroshot_substitutable_prob,zeroshot_sub
+72747992,how to access objects in a object,1397,1,how_to,short_code,other_conceptual,1,1,1,1,1,non_substitutable,0.19841086864471436,0
+71454169,Best Practice: Processing complex dynamic form on single-page with Django,3654,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.24558217823505402,0
+70711575,optimization of MongoDB query,5208,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.2871564030647278,0
+73271758,Did I do this PowerShell problem correctly?,524,1,short_code,short_code,version_environment_specific,1,1,0,0,1,non_substitutable,0.17436273396015167,0
+71210385,Angular error help: Error: Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):,1122,0,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.206573486328125,0
+71943372,Video frames with timestamp or export frame name and timestamp to excel file,272,0,other_conceptual,short_code,short_code,1,1,1,1,1,substitutable,0.6509425044059753,1
+72472234,C++ Header & Source Files - What To Include And In Which Order,513,1,short_code,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.19799363613128662,0
+70820672,Problem in dependency drop down using AJAX,2641,1,version_environment_specific,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.0714348778128624,0
+70833061,Can I reverse-proxy POST requests while using CloudFront CDN for GET requests?,604,1,short_code,how_to,how_to,1,1,1,1,1,non_substitutable,0.2636752724647522,0
+72240514,"MapBoxGL, multiple layers performance issue",2406,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.02481696382164955,0
+70721936,How can I debug my specific version of an open-source lib when there's a maven dependency for a previous version of that lib,1656,0,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.07138584554195404,0
+72092505,Nodejs + express - Unexplained Memory leaks on Kubernetes architecture,729,0,advanced_architecture,long_code,long_code,0,1,1,0,1,non_substitutable,0.017672937363386154,0
+72227326,Architecture of sub-classes in C++,1540,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.06368718296289444,0
+72955412,How to list event listeners of the html element in runtime without the dev tools?,298,0,version_environment_specific,how_to,short_code,0,1,1,0,1,non_substitutable,0.23522625863552094,0
+72061669,Taking a screenshot of an minimized desktop application using python in ubuntu,2243,1,version_environment_specific,short_code,short_code,0,1,1,0,1,non_substitutable,0.15875491499900818,0
+70921925,Get the last non empty column value of every row in the spreadsheet,619,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.4558636248111725,0
+70778759,How to retrieve all consecutive items from a Key Value Pair List?,1659,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.2704448401927948,0
+71192841,How do I get fix the SMTP Error: data not accepted error?,494,0,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.2762981057167053,0
+72448094,C# Performance between a 3D array and a 2D array of objects,796,0,advanced_architecture,advanced_architecture,other_conceptual,0,0,1,0,1,substitutable,0.6642979383468628,1
+72137983,How to separate integer inputs,812,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.2116493284702301,0
+71619550,"Turbo performance benefit confusion, application teardown",773,0,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.09118416160345078,0
+71669167,Optimization (in terms of speed ),982,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.3279370665550232,0
+71291591,Creating Azure Storage account from PowerShell giving error,798,1,debugging_simple,debugging_simple,version_environment_specific,1,1,0,0,1,non_substitutable,0.11569211632013321,0
+71118375,Livewire add an quantity input for each row,2024,1,long_code,how_to,how_to,1,1,1,1,1,non_substitutable,0.3481193482875824,0
+72567286,Write a macro to check function return code,1319,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.17890924215316772,0
+71384320,best practice to store multiple inputs value,1140,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.19294321537017822,0
+70567916,window.open doesn't open the link address stored in react useState,568,0,other_conceptual,long_code,debugging_simple,1,1,1,1,1,non_substitutable,0.20908135175704956,0
+73148854,Keep only the 1st non-null value in each row (and replace others with NaN),538,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.2531222403049469,0
+70721941,Optimization of code (HTML/CSS) for a simple case of border on a div,1260,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.31055065989494324,0
+71948765,Why is this error occuring in my leetcode problem ?88. Merge Sorted Array,906,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.20553824305534363,0
+72729267,Degrading the services automatically by autoscaling in azure services - vCPU,473,0,other_conceptual,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.156680166721344,0
+70848690,How can I implement OneSignal push notification to java (not javascript) backend web application,116,0,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.08992201089859009,0
+73125810,Reorganize the data by months in grafana using psql,697,1,short_code,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.2613756060600281,0
+71148612,Type Hinting List of Strings,150,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.19783689081668854,0
+71359947,vee-validate model-less validation on submit not working,1187,1,debugging_simple,long_code,long_code,1,1,1,1,1,non_substitutable,0.1565430611371994,0
+71312124,Audio for Kivy app works on windows but not android,814,1,version_environment_specific,version_environment_specific,debugging_simple,0,0,1,0,1,non_substitutable,0.15949659049510956,0
+70705699,How to ensure consistent reading in distributed system?,566,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.12885861098766327,0
+70792117,Cannot access application.properties property in AttributeConverter implementation,2083,1,long_code,version_environment_specific,debugging_simple,1,0,1,0,1,non_substitutable,0.10017253458499908,0
+71114864,Can I trigger an ASP:TextBox Enter keypress event via a button? What is this event exactly?,1729,0,other_conceptual,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.32049861550331116,0
+70874161,MYSQL database Store Float Number as 00.00,476,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.2780211865901947,0
+72155282,Why does list.insert not produce IndexError's?,768,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.17611201107501984,0
+71987922,How to capture enter key press event in c# windows application?,483,0,version_environment_specific,debugging_simple,short_code,0,1,1,0,1,non_substitutable,0.18818512558937073,0
+72961254,Comapring data class in Kotlin using == operator,629,1,short_code,other_conceptual,short_code,1,1,1,1,1,non_substitutable,0.10726089775562286,0
+70743387,AWS SSM Document Automation loop,822,0,other_conceptual,how_to,long_code,1,1,1,1,1,non_substitutable,0.33394306898117065,0
+72574627,Project Fields in Array of Array Objects in Mongodb,2667,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.2656286656856537,0
+72358047,Why is a simple test failing and split() not working properly,1795,1,debugging_simple,short_code,short_code,1,1,1,1,1,non_substitutable,0.10135503113269806,0
+70798765,How to open git local documentation files by git command?,1061,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.22454629838466644,0
+71772429,The best way to save the date in the database to work with it in,997,1,short_code,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.3936859369277954,0
+71870497,how to install channels redis in django using pip without errors,3351,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.21320801973342896,0
+73325162,Why do setter methods in the Builder design pattern return `this`?,162,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.0948731079697609,0
+71407359,Change type of id on column which is also a primary key with a ef migration,1348,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.20533017814159393,0
+72847490,Deriving cosine values for vector contrasts distributed over rows in a dataframe (rows to individual vectors),1459,1,advanced_architecture,short_code,short_code,0,1,1,0,1,non_substitutable,0.3826814293861389,0
+73093286,Lottie file issue in ReactJS,373,0,other_conceptual,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.12834462523460388,0
+71869400,Git Bash launches multiple bash.exe processes,718,1,short_code,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.2155607044696808,0
+72992535,Angular p-paginator bug with pages and rows,1724,1,debugging_simple,long_code,long_code,1,1,1,1,1,non_substitutable,0.10482830554246902,0
+72914244,Error message : SyntaxError: Unexpected token < in JSON at position 0,1373,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.32897549867630005,0
+71323399,How play sound in silent mode with just audio,283,0,other_conceptual,how_to,other_conceptual,1,1,1,1,1,non_substitutable,0.18524515628814697,0
+70757038,Count elements in defined groups in pandas dataframe,677,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.4055125117301941,0
+72509957,Excel MERGE two tables,2802,0,other_conceptual,short_code,debugging_simple,1,1,1,1,1,non_substitutable,0.2619672417640686,0
+71276865,Changing text inside upload button after uploading,1805,1,long_code,how_to,short_code,1,1,1,1,1,non_substitutable,0.42440736293792725,0
+71534819,Powershell - Get file size by similar name,1187,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.3402702510356903,0
+70583419,Unable to link mat.h file on Mac,2242,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.10981455445289612,0
+73266742,How to solve [webpack-cli] Failed to load ? [ERR_REQUIRE_ESM],4478,1,debugging_simple,debugging_simple,version_environment_specific,1,1,0,0,1,non_substitutable,0.281946063041687,0
+72377762,Oracle Lob Operation FILEOPEN Failed I/O Error,898,0,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.24708954989910126,0
+71147735,Gems Install Bundle Fails,1353,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.10074787586927414,0
+71904574,How to print a space char without type any space and quote in Linux Bash shell?,969,1,version_environment_specific,short_code,short_code,0,1,1,0,1,non_substitutable,0.2968025505542755,0
+72601835,How to parse XML with prefix in RobotFramework - #Robotframework,2277,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.14765746891498566,0
+73306384,Excel macro to send an email generates runtime error 287,760,1,version_environment_specific,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.2626837491989136,0
+70654475,"How to handel ""net::ERR_QUIC_PROTOCOL_ERROR 200"" in a fetch?",1245,1,how_to,long_code,long_code,1,1,1,1,1,non_substitutable,0.2542358338832855,0
+70995627,Google apps script: Google Slide - exporting selected slides to a new slide presentation,1627,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.39418408274650574,0
+71500887,Masking client secrets in .net application,202,0,other_conceptual,advanced_architecture,how_to,1,0,1,0,1,non_substitutable,0.1474825143814087,0
+73336187,Nested dict with list unexpectedly updates all when appending to one value,954,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.2267916202545166,0
+71511835,Create Pytest-html Report that is Downloadable and Customizable in Python,389,0,other_conceptual,how_to,short_code,1,1,1,1,1,non_substitutable,0.17279371619224548,0
+71913156,Flutter CustomPaint performance,4726,1,advanced_architecture,advanced_architecture,other_conceptual,0,0,1,0,1,non_substitutable,0.22110790014266968,0
+72678747,Firestore collection limits and performance,419,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.15101121366024017,0
+73024835,To disable direct access to microservice & allow only though api gateway,1126,0,advanced_architecture,how_to,how_to,0,1,1,0,1,non_substitutable,0.1411193162202835,0
+70641871,How to return pointer to `GlobalData`?,1532,1,how_to,debugging_simple,other_conceptual,1,1,1,1,1,non_substitutable,0.23688316345214844,0
+73074442,How to use the new ComponentActivity with ViewBinding and the other old AppCompatActivity components,12164,1,how_to,version_environment_specific,other_conceptual,1,0,1,0,1,non_substitutable,0.09766855835914612,0
+72312625,"Blazor List of components, shift values from components when removed from list",3925,1,long_code,short_code,long_code,1,1,1,1,1,non_substitutable,0.2568071186542511,0
+72819470,How to delete Null-elements from the Stream before applying collect?,756,1,how_to,long_code,long_code,1,1,1,1,1,non_substitutable,0.20492592453956604,0
+72998260,Kotlin Gradle plugin need update,2018,1,long_code,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.15358565747737885,0
+70794538,Improving performance for huge table. Partition? Dropping an id and keeping a unique constraint instead? mysql,7028,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.2547096312046051,0
+73133200,"How to detect Screen Sharing is enabled, and stop it, my code working for google meet, but it not working for MS Teams",592,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.08537637442350388,0
+71064755,VBA How to select a range of rows relative to active cell?,248,1,how_to,short_code,how_to,1,1,1,1,1,non_substitutable,0.310737669467926,0
+71575341,MySQL trigger: how to throw an error when condition is not met,2638,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.43189525604248047,0
+72013407,How to read txt file in Pandas: Error tokenizing data,947,1,debugging_simple,short_code,short_code,1,1,1,1,1,non_substitutable,0.3048381805419922,0
+72280813,"How to solve Webpack error related to compiler after updating webpack, webpack cli and webpack dev server",2704,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.09186003357172012,0
+70862250,Typescript: button type prop typescript compilation error,984,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.13032235205173492,0
+71404698,"Master-slave configuration on spring boot, @Transactional(readOnly = true) not working as expected",5481,1,version_environment_specific,long_code,long_code,0,1,1,0,1,non_substitutable,0.10912574082612991,0
+71209825,How to scrape google hot trend,1243,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.24888785183429718,0
+72866012,what s the difference between ROW STORE COMPRESS ADVANCED and compress only in Oracle 12c?,303,1,short_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.14458385109901428,0
+72209901,can I correspond a system assembly version with a dotnet framework version? and how to know if an assembly is included in the framework?,718,0,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.07597256451845169,0
+72099366,how to Calculate the differents between 2 system times with one from string,1611,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.17847265303134918,0
+72608271,Replace elements of a dataframe with a values at another dataframe elements,816,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.3481781482696533,0
+70984563,K8s - Veeam Kasten - CSI Provisioner doesn't have VolumeSnapshotClass,2918,1,long_code,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.2635754346847534,0
+70945780,React State updates too late,1537,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.15437456965446472,0
+72061965,Create Voronoi art with rounded region edges,3152,1,long_code,advanced_architecture,version_environment_specific,1,0,0,0,0,non_substitutable,0.13370761275291443,0
+72618760,"With desired capabilities is deprecated in Selenium 4, how to automate Windows desktop application using Winium in Python 3?",1110,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.10632508248090744,0
+71564071,What does it mean for a function to have a method?,584,1,short_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.0883789211511612,0
+70802469,Best way to track Windows Service Unhandled Exception,2122,0,version_environment_specific,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.2510952651500702,0
+70804380,Why there are no resources (RAM and CPU) dedicated only for administrators' access?,1128,0,other_conceptual,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.14371460676193237,0
+73182963,Why is there a load balancer in ingress controller?,453,0,other_conceptual,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.2497437447309494,0
+73259095,"When entering the wrong input, Gives 'str' is not callable error",10083,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,substitutable,0.5252943634986877,1
+71659431,Save calculated price in database - Rails best practise,743,1,short_code,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.24650461971759796,0
+71689435,Make vertical rulers invisible in .ipynb - files in VS Code,966,1,short_code,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.20213988423347473,0
+72239131,Distinct and List of other column in postgresql,352,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.3057463765144348,0
+71882182,I want to aggregate data array inside another array in mongodb,1672,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.329433798789978,0
+72780714,How to fix design pattern error for cron in node.js?,445,1,advanced_architecture,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.09209863096475601,0
+73305916,"<p> tag, allowing new line/row from input",412,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.31623825430870056,0
+71692012,Bad Performance when using a output DTO with doctrine entities with a set of relations,4509,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.0805748924612999,0
+72474938,Counting observations and considering condition,1970,1,long_code,advanced_architecture,debugging_simple,1,0,1,0,1,non_substitutable,0.275638610124588,0
+71291000,How to add index to existing column using alembic,295,1,how_to,short_code,long_code,1,1,1,1,1,non_substitutable,0.16428492963314056,0
+71371247,Return the first element by finding the smallest positive value of the second element in a list of tuples,215,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.38711947202682495,0
+73226755,How to resolve timeStamp.getDate is not a function,1276,1,how_to,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.11705345660448074,0
+73344706,Python Django3 - Register form issue after deployment on VPS,11549,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.08168970048427582,0
+72505898,Not able to install @angular/fire in my angular project,3101,1,version_environment_specific,version_environment_specific,debugging_simple,0,0,1,0,1,non_substitutable,0.07092051208019257,0
+70770021,please how to change color in php code in wordpress,799,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.290436714887619,0
+73262386,Hide the correct menu nav bar - react,701,0,other_conceptual,how_to,how_to,1,1,1,1,1,non_substitutable,0.23348747193813324,0
+70890713,Why is my Google App Engine app accruing such a large bill so quickly?,922,0,other_conceptual,advanced_architecture,long_code,1,0,1,0,1,non_substitutable,0.07625288516283035,0
+71308377,Laravel table migrations doesn't exist after install,1602,1,version_environment_specific,version_environment_specific,long_code,0,0,1,0,1,non_substitutable,0.1594124287366867,0
+70672164,Neural network architecture for multi-output classification,532,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.10785072296857834,0
+71709919,"Error ""The type or namespace 'MyType' could not be found (or are you missing an assembly reference?)""",1163,1,debugging_simple,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.06748028844594955,0
+71390982,jhipster based nhipster server start error,1957,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.1810499131679535,0
+71736926,Mock Laravel Model in phpunit test,778,0,other_conceptual,long_code,long_code,1,1,1,1,1,non_substitutable,0.34536072611808777,0
+71569985,How to delist of array from np.split() for function argument,1170,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.4028994143009186,0
+72283203,What's the best way to add a C include path when using `bundle install`?,2382,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.26498332619667053,0
+72051985,How can I seperate the JSON response data to list?,1789,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.18344542384147644,0
+72928880,How to Retrieve Image/ Screenshot from Application Document Directory Flutter?,373,0,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.2114795744419098,0
+73317384,How can I run npm install succesfully,634,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.20506104826927185,0
+70933731,Accessing React childs state,1238,1,long_code,how_to,debugging_simple,1,1,1,1,1,non_substitutable,0.19982902705669403,0
+70684671,How do I read/write JSON with c++?,323,0,how_to,debugging_simple,short_code,1,1,1,1,1,non_substitutable,0.14819899201393127,0
+71887590,Welcome message doesn't send?,2646,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.24192316830158234,0
+70790260,Do function names affect performance？,305,0,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.19206224381923676,0
+72858288,"Trying to create a really simple button for my Panel, but even though i implement the action listener in the class, it isn't working",803,1,short_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.049081794917583466,0
+71760290,Trouble rendering data in custom tooltip in rechart,4033,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.1456996649503708,0
+70824473,Convex Optimization - Currency exchange problem - cvxpy error,7160,1,advanced_architecture,version_environment_specific,debugging_simple,0,0,1,0,1,substitutable,0.6649714112281799,1
+71189428,Find triplets such that their sum is divisible by 3. Can this be solved in O(n^2) or any other optimization?,706,1,advanced_architecture,how_to,short_code,0,1,1,0,1,non_substitutable,0.2564794719219208,0
+72533387,Transpose single column after NA to multiple columns with R,1724,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.2946282625198364,0
+71579279,AWS Instance won't accept pings despite security group settings,603,0,other_conceptual,long_code,long_code,1,1,1,1,1,non_substitutable,0.1576000154018402,0
+73326350,PHP 8 and 8.1 critical failure on hooking an undefined function in WordPress no error log,584,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.0573921799659729,0
+73168631,Flutter - background process - how best to package a process that can started in multiple ways,564,0,version_environment_specific,how_to,how_to,0,1,1,0,1,non_substitutable,0.26637035608291626,0
+71451305,malloc and C alignment: is this hand-made optimization safe?,1320,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.15847419202327728,0
+72128719,python kivymd MDDataTable font error(font_name)- windows,3933,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.2517143785953522,0
+72182976,Plotly - how to plot Cylinder?,6821,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.15632326900959015,0
+70657901,"Trying to install conda, how to fix ""ERROR: Command errored out with exit status 1"" and ""error: Microsoft Visual C++ 14.0 or greater is required""",8441,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.18819572031497955,0
+71438047,Build existing Docker image for another architecture without the original Dockerfile,645,1,advanced_architecture,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.05330238863825798,0
+71853416,Displaying Lists as Popups' inside the element of a ReorderableList,4849,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.22633393108844757,0
+72314533,getting null all field response except id in django rest framework,1466,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.29578012228012085,0
+71274131,"Nested dictionary with multiple verbs which in turn have multiple verbs inside. I want to recall a verb, but I have an error",3757,1,debugging_simple,short_code,short_code,1,1,1,1,1,non_substitutable,0.43725553154945374,0
+71236813,Retrieving the node names of all the xml elements with specific attribute name,1011,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.33076825737953186,0
+72458631,REGEXP_LIKE is not working properly with CASE,537,1,debugging_simple,short_code,long_code,1,1,1,1,1,non_substitutable,0.2203487604856491,0
+70804655,'Response' object has no attribute 'success' error in Locust,551,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.26757222414016724,0
+73046545,Filebeat is not forwarding nginx ingress controller logs,2977,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.20426616072654724,0
+72586159,Centrally update multiple AWS Lambda functions,695,0,other_conceptual,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.14512446522712708,0
+71104277,Discord py TypeError: command_name_error() missing 1 required positional argument: 'error',6379,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.41116851568222046,0
+71657277,NIC is unavailable in DPDK application,2069,1,long_code,version_environment_specific,debugging_simple,1,0,1,0,1,non_substitutable,0.08233488351106644,0
+71702521,How to merge Excel column with dynamic value,4098,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.16395951807498932,0
+72556600,Multiple Tables on Datatables with different option,991,1,short_code,other_conceptual,advanced_architecture,1,1,0,0,1,non_substitutable,0.24413107335567474,0
+71328795,Thread 1: Fatal error: Index out of range In SwiftUI,1902,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.18200363218784332,0
+71906625,"react headless ui combox autocomplete, how to search by enter key",4144,1,how_to,how_to,how_to,1,1,1,1,1,substitutable,0.9216260313987732,1
+71341602,What do the 502 errors coming from /_ah/api/discovery/v1/apis mean?,386,0,other_conceptual,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.13862335681915283,0
+70894012,"Python interfaces, Design pattern behaviour",1028,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.21428406238555908,0
+72549485,Parsing XML tags into pandas dataframe,4452,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.39244595170021057,0
+73026428,Is hiding and adding the same component in different place good to performance?,1070,0,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.11671702563762665,0
+70934902,django-allauth or django in general render template on user status,786,1,short_code,how_to,how_to,1,1,1,1,1,substitutable,0.6930477023124695,1
+72232436,Can any one explain the logic behind this code,268,1,short_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.11196673661470413,0
+70889921,Add echo statement to table for readability,3671,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.32517334818840027,0
+72045736,How to make in java an http post returning binary data using plain Sockets,1966,1,how_to,advanced_architecture,how_to,1,0,1,0,1,non_substitutable,0.1626550406217575,0
+72515471,new_version package returns null flutter,892,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.18036939203739166,0
+72790006,How to get audio buffer from video element api?,1250,1,how_to,long_code,long_code,1,1,1,1,1,non_substitutable,0.2025989443063736,0
+73219757,How to get the notes to play for a C Major with Tonal.js,2464,1,how_to,debugging_simple,short_code,1,1,1,1,1,non_substitutable,0.22141319513320923,0
+70807092,Linux 64-bit ERROR: Cannot load OCI DLL: libclntsh.so,1230,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.10743460059165955,0
+72156963,Why my answer get Time Limit Exceeded error?,1042,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.13443410396575928,0
+70955040,Script not looping in python,3826,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.3263107240200043,0
+72743373,Dynamic List Looping Performance,383,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.262744277715683,0
+71616527,Why my REST api created with camel servlet doesn't expose?,10134,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.12598946690559387,0
+71631796,C# Increasing performance of a Linked List,5067,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.3207278549671173,0
+72463832,How can i access FormArray inside formGroup inside another formGroup?,1774,1,how_to,other_conceptual,debugging_simple,1,1,1,1,1,non_substitutable,0.137740358710289,0
+71529799,NodeJS Performance with working with arrays,1992,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.141313374042511,0
+72010607,Flutter Warning: CocoaPods is installed but broken. Skipping pod install - Mac Book M1,3010,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.2949330806732178,0
+71783910,Select spring boot xml configuration at runtime,418,1,version_environment_specific,long_code,long_code,0,1,1,0,1,non_substitutable,0.1402861624956131,0
+73276768,Cloud Services/Architecture of a Multi-tenant Spring boot Project Deployment,1678,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.16392607986927032,0
+72847635,python image unable to load using google colab environment FileNotFoundError: [Errno 2] No such file or directory:,459,0,version_environment_specific,version_environment_specific,debugging_simple,0,0,1,0,1,non_substitutable,0.24296611547470093,0
+72148271,reading behind from list,814,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.33075612783432007,0
+71180460,Error sending data to bank with DropzoneJS,2724,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.23624949157238007,0
+71798642,Keycloak redirect nginx ingress,5036,1,long_code,long_code,how_to,1,1,1,1,1,non_substitutable,0.2739757299423218,0
+72472337,Serialize generic dictionary,759,1,short_code,short_code,short_code,1,1,1,1,1,substitutable,0.8631297945976257,1
+70728049,How do I send react form data to a backend api and get back a response?,4777,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.17681550979614258,0
+72344961,Installing package stringi: icudt could not be downloaded. check your internet connectivity,797,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.10205872356891632,0
+72097622,"on Ubuntu jlink does not generate .bat script, only bash script",311,0,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.3705742061138153,0
+71818320,Use different versions of leaflet library,773,0,other_conceptual,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.27986621856689453,0
+72541423,Deploying Webflux application Jar file,255,0,other_conceptual,how_to,how_to,1,1,1,1,1,non_substitutable,0.18948182463645935,0
+73026787,"How do I figure out my issue with placing the ""try"" function?",1885,1,how_to,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.12462359666824341,0
+73370884,React Native Navigation replacement,775,0,other_conceptual,how_to,how_to,1,1,1,1,1,non_substitutable,0.1516840010881424,0
+71642809,"why sort stl in c++, sort on the basis of first value of vector of pairs in cpp",432,1,short_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.19382883608341217,0
+72156116,Problem understanding convolutions (conv(data)[i] == conv(data[i].unsqueeze(0))??),458,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.13969062268733978,0
+72533891,"Switching from a mac x86 to arm m1 architecture, i ran into this error, anyone knows how fix it?",774,0,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.009740975685417652,0
+73265339,I am getting error in few test cases....Can you tell me the problem with my approach,765,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.15909823775291443,0
+71126747,How to Transfer XML file (entered in TextArea) from one application to another in C#,2259,1,how_to,short_code,debugging_simple,1,1,1,1,1,non_substitutable,0.2834044098854065,0
+72940890,"I want this page to be refreshed when i revisit it from other page or add new product,",3117,1,long_code,how_to,how_to,1,1,1,1,1,non_substitutable,0.2662382423877716,0
+72981751,Swift iOS - Resize collectionLayout on a screen rotation,874,1,short_code,debugging_simple,how_to,1,1,1,1,1,non_substitutable,0.06101047247648239,0
+72558869,Post Website On Github Pages Without Exposing API Key,573,0,other_conceptual,how_to,how_to,1,1,1,1,1,non_substitutable,0.2790379822254181,0
+70869067,Upload file on OneDrive in ASP.NET Core Web API,430,0,other_conceptual,long_code,long_code,1,1,1,1,1,non_substitutable,0.3457450866699219,0
+71082648,Migrating Chrome extension user data kept in local storage to the new version,517,1,version_environment_specific,long_code,how_to,0,1,1,0,1,non_substitutable,0.23419852554798126,0
+73279579,WM_LBUTTONDOWN and WM_LBUTTONUP messages are not received in the WndProc for filled rectangles,4418,1,long_code,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.3480032980442047,0
+72123982,Manage variables php on MVC,727,1,short_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.1902759075164795,0
+73397147,Bigquery data loading ignore pipe and quote,744,1,short_code,advanced_architecture,long_code,1,0,1,0,1,substitutable,0.5068148374557495,1
+71630445,Poor performance of EdiMessage.ToEdi method in ediFabric,926,1,advanced_architecture,version_environment_specific,debugging_simple,0,0,1,0,1,non_substitutable,0.07887721061706543,0
+73099427,React App dependency conflict with webpack-server,1788,1,version_environment_specific,version_environment_specific,debugging_simple,0,0,1,0,1,non_substitutable,0.05883722007274628,0
+72719919,Best practice for packaging Python bindings with fallback implementation (PEP 518),3799,1,advanced_architecture,version_environment_specific,advanced_architecture,0,0,0,1,0,non_substitutable,0.166979119181633,0
+71934888,how to push notification to all users in flutter like,785,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.19248120486736298,0
+72325597,Why does this task config not allow me to compile multiple C++ files in VS Code on Windows?,1819,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.10867523401975632,0
+70594103,How do I deploy HTTPS enabled Jenkins container using docker-compose WITHOUT a reverse proxy container?,4036,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.11892939358949661,0
+72292489,IMPORTRANGE with filter,680,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.22250281274318695,0
+71280934,How do I pass currrent directory when only supplying filename?,1026,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.15004689991474152,0
+72364151,Performance issue when using union,2171,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.10056930780410767,0
+72430899,Ubuntu unable to find AWS CLI when installed via pip3,482,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.09548422694206238,0
+72344723,is it required babel configuration when I use vite in place of webpack,226,0,version_environment_specific,how_to,version_environment_specific,0,1,0,0,1,non_substitutable,0.15466299653053284,0
+71339901,What is the syntax in Oracle to round any number to the greatest/highest place value of that number?,517,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.339161217212677,0
+73041645,Main Class Jar Exception,711,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.14584457874298096,0
+71015410,Windows Batch File: How to dynamically pick up input filenames and also use as the output filename?,625,1,version_environment_specific,short_code,short_code,0,1,1,0,1,non_substitutable,0.32145652174949646,0
+71598733,Iterate rows based on column from other table,632,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.2633025646209717,0
+72749288,docker ERROR: Could not install packages due to an OSError: [Errno 2],716,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.09766706079244614,0
+70812534,While creating react app uisng npx i got following error . How can i resolve this,1234,0,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.06523512303829193,0
+71227184,React-Native Expo Location Getting iOS Permissions,1490,0,other_conceptual,how_to,how_to,1,1,1,1,1,non_substitutable,0.043952055275440216,0
+71762400,why vue props decoding JSON strigifyed object,774,1,short_code,other_conceptual,long_code,1,1,1,1,1,non_substitutable,0.24321989715099335,0
+72730644,Error: Facing issue in starting my react server using command npm start,288,0,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.1359948366880417,0
+72331544,Exoplayer next and previous buttons get hidden when portrait video is played in landscape mode,3491,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.35481154918670654,0
+71007186,Program can't set up Chromium to install Pupeteer using Node JS,931,1,version_environment_specific,debugging_simple,version_environment_specific,0,1,0,0,1,non_substitutable,0.09597647935152054,0
+70624393,Merging two objects using Nodejs,6388,1,long_code,how_to,how_to,1,1,1,1,1,non_substitutable,0.12374188005924225,0
+70563441,"MySQL time duration format, import from CSV",1062,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.48699137568473816,0
+70609420,How to determine if item is last item in a set,507,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.17125171422958374,0
+71402499,How to combine ADTs in Scala?,1782,1,how_to,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.14095908403396606,0
+71011553,ASP.NET MVC View can't see member of an anonymous object viewModel,1178,1,short_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.16197869181632996,0
+71599131,TextInput loses focus if keyboard overlaps it on Android,1152,1,short_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.3784880042076111,0
+70952767,React table - Force to stop rerender cell,362,0,other_conceptual,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.19546760618686676,0
+73087095,Adding function parameter to view results in error for existing computed property,1689,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.212777242064476,0
+72588849,Numpy function for calculating weighted covariance matrix on dataset with nan values?,719,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.260152131319046,0
+70997914,React Native - Native module vs JS performance,1756,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.09840962290763855,0
+72435090,"Getting ""command requires scopes"" error when starting firebase emulator",1607,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.13614840805530548,0
+72308118,"Flutter Runtime Error: PlatformException (PlatformException(error, Attempt to invoke virtual method 'boolean android.view.inputmethod",1806,0,version_environment_specific,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.15609195828437805,0
+73204174,Trajectory optimization with gekko under speed constraints,2761,1,advanced_architecture,long_code,long_code,0,1,1,0,1,non_substitutable,0.2894609570503235,0
+72608391,FTP outbound gateway delegating session factory performance,1450,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.3379206657409668,0
+70930081,Spring JPA query not get parameters,942,1,short_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.2964923679828644,0
+71688179,best practice to check if a collection has duplicate values?,272,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.21229852735996246,0
+72929351,Breaking the for loop does not provide the correct output,1345,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.2353675216436386,0
+72246386,How to use SUM and MAX in select statement more than one table,1203,1,how_to,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.4072391092777252,0
+71776519,VGG parameters not updating,1917,1,long_code,version_environment_specific,long_code,1,0,1,0,1,non_substitutable,0.24480125308036804,0
+71882027,problem of saving objects in parseSdk version 3.0.0 or more,6371,1,version_environment_specific,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.20277030766010284,0
+72329305,With one variable make another one bigger but make the first one smaller,632,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.10439630597829819,0
+70779284,Bootstrap carousel content disappears unexpectedly after a delay,4686,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.17178206145763397,0
+72357479,Why does my code exit after running twice,2487,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.12793885171413422,0
+70808125,Generate .record files from xml from labelImg (pascal voc like format) in tensorflow 2,1475,1,long_code,how_to,long_code,1,1,1,1,1,substitutable,0.5623074769973755,1
+71350458,How would i make a function that will take user input and match it to a array and output the one that matches,951,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.19554489850997925,0
+73065131,Can I use VBA to update an email signature with leave dates?,581,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.3673732876777649,0
+71076991,How to switch between Release and Debug config without regenerating the CMake cache and recompiling the entire project?,324,0,debugging_simple,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.20894712209701538,0
+73097505,Auth::user() always return null,438,0,other_conceptual,long_code,long_code,1,1,1,1,1,substitutable,0.6272196173667908,1
+70781491,Message sequencing in Distributed Env,694,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.1951463520526886,0
+73329334,Always keep text view in center of Constraint Layout,2158,1,long_code,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.3307976722717285,0
+73391905,Unable to create local spark session during scala test. log4j:ERROR Could not create an Appender,8297,1,debugging_simple,debugging_simple,long_code,1,1,1,1,1,non_substitutable,0.13200367987155914,0
+71694227,How can I stop geom_point from removing rows in order to create a map,4567,1,how_to,long_code,long_code,1,1,1,1,1,non_substitutable,0.1966630518436432,0
+72159104,Unusually Large values and negative values of addresses of a variable,2312,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.1897895783185959,0
+72549715,Which undefined behavior allows this optimization?,2121,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.2268456369638443,0
+71926120,"I'm trying to change the color of a sprite when ""space"" is pressed but I want it to remain red for two seconds and than change back to blue",712,1,short_code,how_to,short_code,1,1,1,1,1,non_substitutable,0.1467885673046112,0
+71128435,FAILURE: Build failed with an exception. Android Java,28237,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.10457226634025574,0
+72470180,Unable to make click event to work on javascript,2603,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.10838440805673599,0
+70754547,Image view crush stackview constraints in swift?,590,0,other_conceptual,version_environment_specific,how_to,1,0,1,0,1,non_substitutable,0.21098975837230682,0
+71097779,React native FlatList not rerendering when data prop changes to empty array,1189,1,short_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.20382694900035858,0
+70568836,managing angular 13's angular-webpack cache,796,0,other_conceptual,how_to,how_to,1,1,1,1,1,non_substitutable,0.0832340344786644,0
+70988026,Process async results in another thread - app architecture (python-3.7),2565,1,advanced_architecture,long_code,long_code,0,1,1,0,1,non_substitutable,0.20542269945144653,0
+73196008,How to replace a dataframe rows with other rows based on column values?,1040,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.17671382427215576,0
+73106845,"Create and import only last sheet data with found error ""UserWarning: Calling close() on already closed file.""",845,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.25030630826950073,0
+72021082,how to disable grid view onclick highlight the grid item. XAML UWP,3835,1,how_to,version_environment_specific,debugging_simple,1,0,1,0,1,non_substitutable,0.15848053991794586,0
+73323948,What is the correct way to represent a generic entity in Clean Architecture,5240,1,advanced_architecture,other_conceptual,advanced_architecture,0,1,0,0,1,non_substitutable,0.35705453157424927,0
+71607851,How do I safely register a user using EF Core,952,1,how_to,advanced_architecture,how_to,1,0,1,0,1,non_substitutable,0.16502316296100616,0
+70848449,Javascript - Perform several functions in a row && Error: ENOENT: no such file or directory,1144,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.18806974589824677,0
+70903946,Installing django with python error on widows 10?,5060,1,debugging_simple,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.14962047338485718,0
+71541742,"How to ""open"" locked terminal when Django server is running on VSCode (What hotkey is being pressed here)?",542,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.09806397557258606,0
+71943051,How to install azure.storage.blob library for python?,3171,0,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.2222742736339569,0
+71052584,Linux - Open socket for specific network adapter,1473,1,version_environment_specific,how_to,how_to,0,1,1,0,1,non_substitutable,0.1831279993057251,0
+73051067,how i can reread my config file in runtime spring?,211,0,version_environment_specific,version_environment_specific,long_code,0,0,1,0,1,non_substitutable,0.16874779760837555,0
+72994882,Install a Maven library in a Dockerfile,1932,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.14688953757286072,0
+70717627,Could not fetch URL https://pypi.org/simple/absl-py/: when creating condas environment from file,3892,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.18087033927440643,0
+72294933,"Python ""print"" function not working with crontab",2282,1,debugging_simple,short_code,short_code,1,1,1,1,1,non_substitutable,0.18870778381824493,0
+71356423,How can I change Mapbox style URL when device switches light/dark mode?,787,1,how_to,how_to,long_code,1,1,1,1,1,non_substitutable,0.15277250111103058,0
+71763539,How to download excel file from API in React?,1485,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.19405658543109894,0
+71712624,Issue with TypeError when looping through columns in a list of data frames,1715,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.3140280544757843,0
+73405560,Stacked percentage barplot with two factors,819,0,other_conceptual,short_code,debugging_simple,1,1,1,1,1,non_substitutable,0.3687310814857483,0
+71794104,NodeJS error sending parameters to SQL query,1881,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.21297211945056915,0
+73089234,How to add form fields in flask on button press?,841,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.15801380574703217,0
+71118011,Parse Right Aligned Multi-Line Text File Report,1476,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.33579981327056885,0
+72070693,Factory method design pattern Typescript,1200,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.24603228271007538,0
+71894721,Spark on Kubernetes: How to improve my performance?,17731,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.1250266432762146,0
+70844261,@Data annotion not working to set the value in Java,1244,1,debugging_simple,long_code,debugging_simple,1,1,1,1,1,non_substitutable,0.22415265440940857,0
+70562578,Flutter | Syncfusion flutter map package | How we change the map styling with google maps?,5415,1,version_environment_specific,how_to,how_to,0,1,1,0,1,non_substitutable,0.18868519365787506,0
+70812627,HTTP 404 error when installing R package from public repo on Github,645,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.14282864332199097,0
+72803531,How can I know which static pages on my site are being visited?,146,0,how_to,how_to,short_code,1,1,1,1,1,non_substitutable,0.07228405773639679,0
+70836191,Specifying a color to a data value in a tuple and plotting into a graph in Python,1937,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.32113996148109436,0
+73100526,installed.packages() doesn't show priority,959,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.1402212530374527,0
+72854565,How do I extract particular name from a file name in shell,172,0,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.2572875916957855,0
+72886274,Error: Can't resolve 'async_hooks' in '/node_modules/raw-body',891,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.17338207364082336,0
+72642834,Delete duplicate data from MySQL table date wise,1253,1,long_code,short_code,debugging_simple,1,1,1,1,1,non_substitutable,0.30690997838974,0
+70550364,Google sheets IMPORTXML Return no Data N/A,561,1,short_code,short_code,debugging_simple,1,1,1,1,1,non_substitutable,0.2340472936630249,0
+72410374,How to use `cut` or `sed` to delete few characters or a word only from the beginning of output and not from every line of output?,2190,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.17130516469478607,0
+70576883,useEffect with function that update the state as dependency leads to infinite loop,1592,1,version_environment_specific,debugging_simple,long_code,0,1,1,0,1,non_substitutable,0.25884637236595154,0
+71845679,"Sequelize, lazy loading on associated models",1032,1,short_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.18764738738536835,0
+70643562,Three.js - How to pre-position objects to merge?,636,1,how_to,short_code,advanced_architecture,1,1,0,0,1,non_substitutable,0.13381341099739075,0
+73429917,"Django Class Media js Refused to execute script from because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled",285,1,short_code,how_to,debugging_simple,1,1,1,1,1,non_substitutable,0.11001844704151154,0
+71919526,Flask POST request optimization,4280,1,advanced_architecture,long_code,how_to,0,1,1,0,1,non_substitutable,0.19563816487789154,0
+70606560,MMLib.SwaggerForOcelot not resolving Microservice Swagger Link,1658,1,advanced_architecture,long_code,long_code,0,1,1,0,1,non_substitutable,0.1247790977358818,0
+70860820,Sync scroll react. div block with main scroll on window,2527,1,long_code,how_to,how_to,1,1,1,1,1,non_substitutable,0.2730405628681183,0
+71011650,Why is my website's grid collapsing the first time it's loaded?,26599,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.08607224375009537,0
+70731851,GNU assembler on Windows: WriteFile returns ERROR_INVALID_HANDLE,2553,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.32732561230659485,0
+71216645,Can the performance of this SQL inner join be improved?,1113,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.24372152984142303,0
+72803780,Power management functions in Linux platform drivers,1294,0,version_environment_specific,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.199306458234787,0
+73209725,Stop Loop Property in wavesurfer.js,768,0,other_conceptual,short_code,long_code,1,1,1,1,1,non_substitutable,0.14622369408607483,0
+71521976,ReferenceError: DOMRect is not defined,550,1,short_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.1754283905029297,0
+73104282,"Initialize javascript Date to noon in ""America/New_York""",462,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.2489011287689209,0
+71468362,compare two files except first bytes of each lines with shell command,1174,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.2141031175851822,0
+72004638,AAD B2C - Add user to group via post to GrapAPI in Azure function,2623,1,long_code,how_to,long_code,1,1,1,1,1,non_substitutable,0.3161797821521759,0
+70780890,How to pass array of types in Scala?,862,1,how_to,short_code,other_conceptual,1,1,1,1,1,non_substitutable,0.20101284980773926,0
+73381009,"I have this error in R Error in Genpro(): could not find function ""Genpro""",2923,1,debugging_simple,version_environment_specific,debugging_simple,1,0,1,0,1,non_substitutable,0.17589297890663147,0
+71832051,How to safely determine whether a block-scoped variable is defined,1161,1,how_to,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.12103107571601868,0
+73402337,React drawer Navigation lags while opening,1991,1,long_code,long_code,debugging_simple,1,1,1,1,1,non_substitutable,0.25208815932273865,0
+73042078,VS Code + Rust Analyzer: Insert ALL explicit types,465,0,other_conceptual,other_conceptual,version_environment_specific,1,1,0,0,1,non_substitutable,0.2666744887828827,0
+71248300,"packer running on docker, amazon/google builders not working",2789,1,debugging_simple,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.12407620251178741,0
+71538029,Problems import CV2 package,836,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.18672524392604828,0
+70818684,For loop ignores the first term python,286,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.20073504745960236,0
+71272356,"Google Calendar Event Link shows Coordinated Universal Time on Safari, but it should adjust to the timezone the user is it",865,0,other_conceptual,long_code,how_to,1,1,1,1,1,non_substitutable,0.16868585348129272,0
+70738302,React native typescript : adding automatic hyphen and mask,3687,1,long_code,how_to,how_to,1,1,1,1,1,non_substitutable,0.250571608543396,0
+72003081,Enforce mandatory request headers on .Net Core WebAPI?,523,1,short_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.12376800179481506,0
+70976093,getting 401 response codes on a deployed React App that worked fine in development?,846,1,short_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.20764988660812378,0
+70589996,"How can create react native build and share to my client, I am trying to share the apk-debug.apk file but its showing run react-native start error",986,0,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.1357533484697342,0
+73016203,R Shiny unable to start png device after running a few hours,2312,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.16767647862434387,0
+70912006,How to rename venv in macOS 12.1 using sed -i?,952,1,how_to,version_environment_specific,short_code,1,0,1,0,1,non_substitutable,0.21232588589191437,0
+71984933,Can I create a shared data section in among a Linux process and forked sub-processes?,2048,1,version_environment_specific,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.2051423192024231,0
+71443283,How to use invoke command to install .msi file on remote system which requires elevated permissions,1438,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.26486027240753174,0
+71027855,SQL How to convert a date into hours per minute? Then subtract two of the colums (end-start) and set it as a new column?,695,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.3015756905078888,0
+72416755,ca not open execute file from python script due to no package metadata for streamlit,396,0,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.1697368621826172,0
+73212503,Nested React Router V6 Wildcard issue,2506,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.14816568791866302,0
+72389012,Cannot perform Shift + Drag on a div element containing an embedded SVG image,899,1,short_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.19176356494426727,0
+72802596,Performance testing with Locust with mocking 3rd party API,352,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.28635039925575256,0
+71824988,Optimization problem: CVXPY Problem does not follow DCP rules,2609,1,advanced_architecture,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.11872533708810806,0
+72900539,How JavaScript Program Can Communicate With C# Console Application?,782,0,other_conceptual,other_conceptual,how_to,1,1,1,1,1,non_substitutable,0.14784497022628784,0
+71694268,"How to answer with (y,Y OR n,N) on math expression with random num and operators",1602,1,how_to,short_code,short_code,1,1,1,1,1,substitutable,0.5769245624542236,1
+71511392,PHP Datetime: How to get first and last hour of the day?,2071,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.21398772299289703,0
+73023456,Laravel 9 - ERROR: Auth guard [ admin] is not defined,6494,1,debugging_simple,how_to,debugging_simple,1,1,1,1,1,non_substitutable,0.15567919611930847,0
+72578986,TradingView advance chart has Cannot read properties of undefined (reading 'startsWith'),616,1,short_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.15252135694026947,0
+73362115,Flutter Custom Package (unable to load asset),3230,1,version_environment_specific,debugging_simple,version_environment_specific,0,1,0,0,1,non_substitutable,0.1366131454706192,0
+71147791,How do I solve Redirect URI is not supported by the client in Discord OAuth2,2529,1,how_to,long_code,long_code,1,1,1,1,1,non_substitutable,0.21402883529663086,0
+71384088,Facebook/Instagram Comments Scraping,313,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.34397202730178833,0
+73148775,How to implement the State design pattern?,1442,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.11007603257894516,0
+70951601,Android using colors from colors.xml(@color/black) vs inline colors((#000000) in XML File Performance,493,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.22600901126861572,0
+73421523,DOM manipulation not working in VS Code because I had installed node,623,0,version_environment_specific,how_to,version_environment_specific,0,1,0,0,1,non_substitutable,0.1565760374069214,0
+73372709,How to measure performance metrics of an microservices application?,499,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.13130693137645721,0
+71813712,best practice nginx Load balancer snippet annotation,618,1,advanced_architecture,how_to,advanced_architecture,0,1,0,0,1,non_substitutable,0.25524404644966125,0
+71327435,C++ Design pattern for IO operations,1706,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.16853240132331848,0
+73363037,there is no error or output after running the example codes (nature of code),573,0,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,substitutable,0.5362279415130615,1
+72462990,How to auto adjust the height of list row in edit mode?,1738,1,how_to,short_code,how_to,1,1,1,1,1,non_substitutable,0.17248260974884033,0
+71853860,Android app crash due to TimeoutException in Pre-launch reports of Google,2589,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.0664239451289177,0
+70771308,Loop through an array inside an object javascript,433,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.36292192339897156,0
+71874002,Using eShopOnContainers .NET microservices architecture - Use AD B2C instead of IdentityServer4 for microservice authentication,4125,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.015826888382434845,0
+72723948,Decoding LPLinkMetadata loses imageProvider,1219,1,long_code,version_environment_specific,long_code,1,0,1,0,1,non_substitutable,0.18125462532043457,0
+72205094,How can I get multiple output variables into a list?,899,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.18276779353618622,0
+71579263,"Flutter CopyWith what happens to the old object,Is it good for performance?",1041,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.11400829255580902,0
+70933681,Seeking Guidance,685,0,other_conceptual,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.23062530159950256,0
+70652462,AWS Glue ETL Job: Bookmark or Overwrite - Best practice?,2091,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.16611585021018982,0
+71512479,Flutter toast dialog,373,0,other_conceptual,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.32209670543670654,0
+70626914,Azure Redirect from www to non-www in Angular and .Net Core API,905,0,other_conceptual,long_code,how_to,1,1,1,1,1,non_substitutable,0.22883634269237518,0
+73041899,"Angular agGrid with complex cell renderer and nested angular components has poor performance, how to improve it",1695,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.11757032573223114,0
+72695047,"Angular, mouseover speed is choppy?",1582,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.16511887311935425,0
+71629449,Why do we need word get in String,1467,1,long_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.1874898076057434,0
+70802054,Angular component Design pattern or principle,1186,1,advanced_architecture,other_conceptual,advanced_architecture,0,1,0,0,1,non_substitutable,0.12356939166784286,0
+72432095,ways to solve optimization problem with cartesian product and restrictions in a production line,1625,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.08754178136587143,0
+72553111,how to netcat in listen mode prints to stdout when -c option is in use,453,1,how_to,how_to,debugging_simple,1,1,1,1,1,non_substitutable,0.23058739304542542,0
+71922360,"PDF file hosted on S3 is giving ""Deceptive site ahead"" in bright red",663,0,other_conceptual,long_code,long_code,1,1,1,1,1,non_substitutable,0.259286493062973,0
+72694622,turtle not drawing anything with functions,707,1,short_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.26954495906829834,0
+72766726,API version 2022-03-01 does not have operation group 'virtual_machine_images',1574,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.10017076134681702,0
+72769999,Add space number angular 12,177,0,other_conceptual,how_to,short_code,1,1,1,1,1,non_substitutable,0.14692553877830505,0
+70980875,Program stuck in while loop even though it seems correct,1154,1,short_code,debugging_simple,short_code,1,1,1,1,1,non_substitutable,0.25521278381347656,0
+72190076,Error in R: 'system is exactly singular' when doing factor analysis,1370,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.10189245641231537,0
+72357269,Set text on top of cell while 1 cell on same row is setWrapText(true),419,0,other_conceptual,short_code,debugging_simple,1,1,1,1,1,non_substitutable,0.3631407916545868,0
+71063094,Azure blob storage streaming performance issue,2185,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.049440428614616394,0
+71588769,Is COUNT(1) or COUNT(*) better for PostgreSQL,220,1,short_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.3477265238761902,0
+73059378,"Navigate to section by clicking dot Indicator, gsap Observer&javascript",2444,1,long_code,how_to,how_to,1,1,1,1,1,substitutable,0.5043076276779175,1
+72574649,dplyr::cur_group_id() by order of appearance rather than alphabetical order,7509,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.32730796933174133,0
+73270777,How can implement bootstrap form class in react,2150,1,long_code,how_to,how_to,1,1,1,1,1,non_substitutable,0.07934931665658951,0
+70683530,Search for specific string using shell script,335,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.4635348618030548,0
+71921878,WORKDIR $HOME cannot normalize nothing,725,1,short_code,version_environment_specific,long_code,1,0,1,0,1,non_substitutable,0.0274514090269804,0
+72748879,Clustering performance evaluation(Davies-Bouldin Index) error,1136,1,advanced_architecture,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.2245635986328125,0
+71948807,Performance monitoring is not uploaded by sentry-expo,5662,1,advanced_architecture,how_to,long_code,0,1,1,0,1,non_substitutable,0.31158483028411865,0
+70659797,How to read an image from a URL in Colab?,1414,1,how_to,how_to,short_code,1,1,1,1,1,non_substitutable,0.29785290360450745,0
+73327534,REST post request with API key and Windows login credentials,1364,1,version_environment_specific,long_code,how_to,0,1,1,0,1,non_substitutable,0.2889931797981262,0
+72024450,Wordpress wp-admin doesn't work on Chromium browsers,891,0,other_conceptual,how_to,debugging_simple,1,1,1,1,1,non_substitutable,0.14849624037742615,0
+71198479,Align mat-icon button to top right for close button,1627,1,long_code,short_code,debugging_simple,1,1,1,1,1,non_substitutable,0.24167633056640625,0
+70593473,"POPsql is stuck at startup, what can i do?",378,0,other_conceptual,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.025878923013806343,0
+72471147,Performance optimizations for write-heavy PostgreSQL table with indices,777,0,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.16213613748550415,0
+71754229,React testing library can't find element after click,1048,1,short_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.23496507108211517,0
+71047019,Vue + chartjs : Nearest point on hover tooltip not working,1565,1,debugging_simple,debugging_simple,long_code,1,1,1,1,1,non_substitutable,0.12083801627159119,0
+70613153,How do I connect NuxtJS login auth to my backend with axios?,3023,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.14146150648593903,0
+70942051,A tuple of two generics constrained to the same parameterized type,1849,1,long_code,version_environment_specific,advanced_architecture,1,0,0,0,0,substitutable,0.5604509711265564,1
+73402777,How to stop infinity score loop in quiz app JavaScript?,2127,1,how_to,short_code,debugging_simple,1,1,1,1,1,non_substitutable,0.1143011674284935,0
+70695039,org.h2.jdbc.JdbcSQLSyntaxErrorException after H2 version upgrade,2078,1,version_environment_specific,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.22919611632823944,0
+71001977,"Is it possible to ignore ESLint configuration files in certain, but not all, parent directories?",2026,1,version_environment_specific,how_to,how_to,0,1,1,0,1,non_substitutable,0.11588446795940399,0
+71044853,How to check if data returned from ajax as json is empty object or not,2436,1,how_to,debugging_simple,short_code,1,1,1,1,1,non_substitutable,0.29779964685440063,0
+72636062,"SQL query performance, unexpected results - SQL Server",1032,1,advanced_architecture,advanced_architecture,long_code,0,0,1,0,1,non_substitutable,0.28808408975601196,0
+71656348,How to check linux directory permission for current user which doesn't exist,541,1,version_environment_specific,debugging_simple,how_to,0,1,1,0,1,non_substitutable,0.15717558562755585,0
+73320397,VS Code devcontainer uses old version of repository when cloning,524,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.11025578528642654,0
+71694496,ERROR: failed building wheel when installing spectral-cube (astropy),759,0,debugging_simple,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.05764264985918999,0
+71361309,Docker timeout error mssql17 connection on M1 arm64 architecture,2441,1,advanced_architecture,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.05838044360280037,0
+72141751,Docker: Error response from daemon: error creating overlay mount to /var/lib/docker/overlay2/ (Path here) /merged : too many levels of symbolic links,1046,1,debugging_simple,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.09512181580066681,0
+72196397,"android:exported=""true"" not working and not letting flutter app be installed in phone",4514,1,version_environment_specific,version_environment_specific,debugging_simple,0,0,1,0,1,non_substitutable,0.0992376059293747,0
+71063762,"SQL Max from Subquery, Msg 102, Incorrect syntax near ')'",698,1,short_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.27642062306404114,0
+72942750,How to list all properties of a project at start time?,592,1,how_to,how_to,how_to,1,1,1,1,1,non_substitutable,0.17549480497837067,0
+72993300,How to log Websphere connection pool information like active connections in spring boot application,355,0,how_to,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.2657260596752167,0
+70915428,Failed to evaluate transaction: Error: You've asked to invoke a function that does not exist: getLastPatientId,7212,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.1299104541540146,0
+71925125,Hibernate-core Error when upgrading Spring-boot to 2.6.6 from 2.1.1,8206,1,debugging_simple,long_code,long_code,1,1,1,1,1,non_substitutable,0.04745202139019966,0
+72828425,Windows 10 Registry SubKey REG_MULTI_SZ How do I edit just some of the values,1838,1,version_environment_specific,short_code,short_code,0,1,1,0,1,non_substitutable,0.2110336273908615,0
+73114807,Using an AWS lambda that has a package.json inside with a Lambda layer,1452,1,version_environment_specific,how_to,how_to,0,1,1,0,1,non_substitutable,0.10541786998510361,0
+72043761,Synchronized code block for microservice architecture,1888,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.13197529315948486,0
+70927858,Trouble in the for loop while printing the list,560,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.20371870696544647,0
+72807284,Google Analytics Measurement Id as Environment Variable,922,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.26328444480895996,0
+72143160,Login with biometrics (fingerprint) throws an exception only in Chrome (mobile),3199,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.11908125877380371,0
+71092755,mobile version of my website burger button doesn't drop down,3899,1,version_environment_specific,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.20692233741283417,0
+71242303,How can I convert this pandas dataframe to a list?,747,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.25685182213783264,0
+72258956,Best practice to make 2 separate endpoints or throw all the data into 1 endpoint,780,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.07523317635059357,0
+71574066,2 different specified elements from 2 numpy arrays,246,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.41174477338790894,0
+70654157,bash: basename: command not found on windows git,768,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.20746132731437683,0
+71679822,What does SqlCommandBuilder.GetUpdateCommand Create?,493,1,short_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.12342396378517151,0
+72181084,My graph is printing too many lines. I think its due to an error in my while loop that keeps creating arrays,2855,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.29992926120758057,0
+70872046,CallerMemberAttributes as an enricher,700,1,short_code,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.22247563302516937,0
+72983689,Define_Module() throws an error | C++ | Omnet++,9586,1,debugging_simple,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.09838224202394485,0
+72897363,"Child process not killed - Node js ( inside Electron js app, windows)",709,1,version_environment_specific,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.21985021233558655,0
+71441551,userEvent.type from react testing library not updating value of input in material UI TextField with default values,2415,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.4302261173725128,0
+72291682,Is it possible to add an icon to the Windows System Image List?,2872,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.16373910009860992,0
+70917971,performance decrease with two foreach loop?,1548,1,advanced_architecture,advanced_architecture,other_conceptual,0,0,1,0,1,non_substitutable,0.1548462063074112,0
+71140621,"Running a python script that reads folders ends up with ""Winerror 5: Access is denied."" I already tried running as admin",1552,1,long_code,version_environment_specific,debugging_simple,1,0,1,0,1,non_substitutable,0.2091708928346634,0
+71852116,How to install modules in node_modules folder of electron app keeping them isolated from other modules present in node_modules folder..?,800,0,version_environment_specific,how_to,how_to,0,1,1,0,1,non_substitutable,0.14545445144176483,0
+71401185,Gradle error in Android Studio: Could not find “com.android.tools.build:gradle:7.1.1.”,4450,1,debugging_simple,version_environment_specific,version_environment_specific,1,0,0,0,0,non_substitutable,0.10276997089385986,0
+71716220,R: simulating a population where two categorical variables are independent,1673,0,other_conceptual,short_code,how_to,1,1,1,1,1,non_substitutable,0.3250179588794708,0
+70980683,The data couldn’t be read in Swift,5724,1,long_code,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.08741346746683121,0
+73221452,How to stop docker container still running in circleci?,368,0,how_to,how_to,version_environment_specific,1,1,0,0,1,non_substitutable,0.17324385046958923,0
+72899822,Kafka Magic Tool for Mac M1,183,0,version_environment_specific,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.27452823519706726,0
+72307116,Count the number of times a group of words appear in a text,871,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.3484220504760742,0
+70678983,simple docker run target in goland can't find package main,1309,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.19526982307434082,0
+72219863,Split up bootstrap 3 typeahead search,975,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.2576127350330353,0
+71252559,Unexpected Pandas KeyError(key) when using combination of apply lambda and if else conditon,808,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.02610562928020954,0
+71296040,How to sink data into a single json file using flink v1.13+?,721,1,how_to,long_code,long_code,1,1,1,1,1,non_substitutable,0.14043666422367096,0
+71395436,Recommended Azure SQL Server Database Configuration,291,0,version_environment_specific,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.19134685397148132,0
+71377847,Can't use chrome.runtime.getPackageDirectoryEntry in service work with the manifest v3 Chrome Extension standard,974,1,version_environment_specific,long_code,version_environment_specific,0,1,0,0,1,non_substitutable,0.1141149178147316,0
+72331380,"When I tried python -m pip install --upgrade pip , in termux this happened :",2807,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.1896708756685257,0
+70963247,Bloom Filters with the Kirsch Mitzenmacher optimization,2516,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.27303585410118103,0
+72190398,Performance issue in linq query,2399,1,advanced_architecture,advanced_architecture,other_conceptual,0,0,1,0,1,non_substitutable,0.14390462636947632,0
+70966489,"Odoo13-CE: Error message: The requested operation (""read"" to ""account"" (account.account)) was rejected due to following rules: Account multi-company",481,1,debugging_simple,long_code,long_code,1,1,1,1,1,non_substitutable,0.2594777047634125,0
+72463045,Firebase storage image not downloading on android (but Works fine on Ubuntu),647,1,version_environment_specific,debugging_simple,debugging_simple,0,1,1,0,1,non_substitutable,0.1915147304534912,0
+71613846,How to get the member's server nickname discord.py,118,0,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.20843087136745453,0
+72227735,user-data shell is not executed when an EC2 instance launched by ASG/Launch Configuration with custom AMI,1438,1,version_environment_specific,long_code,long_code,0,1,1,0,1,non_substitutable,0.23816870152950287,0
+72290591,"Hook ""wp_trash_post"" executing multiple time in case of bulk trash products",469,0,other_conceptual,long_code,long_code,1,1,1,1,1,non_substitutable,0.29841533303260803,0
+72594952,Error: Package doesn't exists when importing a user defined package from a class,670,1,version_environment_specific,version_environment_specific,debugging_simple,0,0,1,0,1,non_substitutable,0.1834425926208496,0
+72005183,Cannot access environment variables in Docker environment,1934,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.18544797599315643,0
+73345074,The lookup of the deallocation function called when the initialization of the object a new expression created by terminates by throwing an exception,5796,1,debugging_simple,other_conceptual,other_conceptual,1,1,1,1,1,non_substitutable,0.22696366906166077,0
+73078558,Azure Cache Redis Slow Performance rather than DB query,450,0,advanced_architecture,advanced_architecture,long_code,0,0,1,0,1,non_substitutable,0.3425534665584564,0
+72027836,Customizing the Tag Helper element font,724,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.2356417030096054,0
+72325199,"How to Resolve Validation failed: Banner Failed to manipulate with MiniMagick, maybe it is not an image? Original Error: `convert /api/tmp/",1544,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.14850424230098724,0
+72065980,getting an image from input,813,1,short_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.28090980648994446,0
+70642837,Add custom fields for log4j2 JsonTemplateLayout with dynamic values only for error logs,7618,1,debugging_simple,debugging_simple,long_code,1,1,1,1,1,non_substitutable,0.19685721397399902,0
+71251154,Android Jetpack Compose set modifier properties as percentage of device width or height,924,1,short_code,advanced_architecture,how_to,1,0,1,0,1,non_substitutable,0.11617866903543472,0
+71361135,How to get Py4Delphi to use a Python Virtual Environment,188,0,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.13837085664272308,0
+71224126,How to use PageView builder to view items based on my List?,5945,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.18530526757240295,0
+71721214,How can I reshape a matrix in base R without a for loop?,501,0,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.2149423062801361,0
+70658703,Accessing one's personal Google Drive without registering an app?,764,0,other_conceptual,how_to,how_to,1,1,1,1,1,non_substitutable,0.31811511516571045,0
+72872971,I am trying to fetch data with NextJS but I keep getting this error -- Cannot read properties of undefined (reading 'fetch'),1705,1,debugging_simple,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.25600510835647583,0
+73271066,"Performance consideration for AnyLogic, delete ""added"" object of Java class",484,0,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.1090502142906189,0
+71616898,macOS - Java 17 installed with asdf: No such file or directory when checking java version,915,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.2286250740289688,0
+72879110,Auth0 - Insufficient Scope Error in Express.js using 'express-oauth2-jwt-bearer' Package,2098,1,version_environment_specific,long_code,how_to,0,1,1,0,1,non_substitutable,0.10478520393371582,0
+70835093,How to improve react form performance (with formik)?,954,1,advanced_architecture,advanced_architecture,long_code,0,0,1,0,1,non_substitutable,0.1462939977645874,0
+71899155,Pickle Not Dumping Everything?,3816,1,long_code,debugging_simple,long_code,1,1,1,1,1,non_substitutable,0.1881554275751114,0
+70648273,"Size, referencing and dereferencing a dynamic array of structures",1692,1,long_code,advanced_architecture,advanced_architecture,1,0,0,0,0,non_substitutable,0.196507528424263,0
+70789297,Apache Beam Performance Between Python Vs Java Running on GCP Dataflow,2197,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.3103886842727661,0
+70602170,Is there a way to autosave my work in R Studio?,267,0,other_conceptual,how_to,how_to,1,1,1,1,1,non_substitutable,0.2279677838087082,0
+71062317,Infinite Non-ASCII character in the Angular ng test output,14570,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.2654027044773102,0
+71037215,prisma client not see schema in globally installed node_modules,1187,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.12165648490190506,0
+71979537,How to get the inherited values of element from JavaScript,2238,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.19974733889102936,0
+73085439,Unity multiplayer(android and ios) using socket.io,539,0,other_conceptual,debugging_simple,how_to,1,1,1,1,1,non_substitutable,0.38536202907562256,0
+71567958,Postgres replication is not working for base64 content,2055,1,debugging_simple,long_code,long_code,1,1,1,1,1,non_substitutable,0.18933658301830292,0
+70814158,How to run any 1 module without having to run main.dart?,77,0,how_to,version_environment_specific,how_to,1,0,1,0,1,non_substitutable,0.17784245312213898,0
+70874805,use and import an old script in new vue app,21173,1,long_code,how_to,how_to,1,1,1,1,1,non_substitutable,0.18552835285663605,0
+70851487,What does the npx command install?,1711,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.11934614181518555,0
+73133991,Google Composer failing to install private Artifacts package,2443,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.16076399385929108,0
+72946313,"Argumentless nodemon command in npm project does not run value of ""main"" from package.json",1756,1,version_environment_specific,version_environment_specific,version_environment_specific,0,0,0,1,0,non_substitutable,0.2546536922454834,0
+72105348,RESTful web service: How can I take this data without printing out the other,1861,1,how_to,short_code,short_code,1,1,1,1,1,non_substitutable,0.15109236538410187,0
+72112300,Reload Scripts Assemblies (busy for long time) Unity Freezes,525,0,other_conceptual,debugging_simple,advanced_architecture,1,1,0,0,1,non_substitutable,0.3256160616874695,0
+71494509,Private Registry for Action Pods in Openwhisk deployed on Kubernetes through helm 3,1451,1,long_code,long_code,long_code,1,1,1,1,1,non_substitutable,0.15682993829250336,0
+71188754,Gradle Performance: Duplicating Dependencies with Implementation vs Reusing and Exposing with API,1742,1,advanced_architecture,advanced_architecture,other_conceptual,0,0,1,0,1,non_substitutable,0.11747589707374573,0
+72666138,How to stop particle flipping when I move camera view by using C# scripting in Unity,412,0,how_to,debugging_simple,debugging_simple,1,1,1,1,1,non_substitutable,0.35337260365486145,0
+72707216,Adding the corresponding matching column value to the table,515,0,other_conceptual,short_code,short_code,1,1,1,1,1,non_substitutable,0.31044742465019226,0
+72354721,python [oob] - data class with generator to get lazy evaluation,3345,1,long_code,short_code,short_code,1,1,1,1,1,non_substitutable,0.2047877013683319,0
+72005312,What is the best practice using KQL to filter desired attack signature over (web)logs?,4575,1,advanced_architecture,advanced_architecture,advanced_architecture,0,0,0,1,0,non_substitutable,0.2867535948753357,0
+72050562,Returning copies of objects with the spread operator and effects on performance with Javascript,2482,1,advanced_architecture,other_conceptual,other_conceptual,0,1,1,0,1,non_substitutable,0.25511667132377625,0
+71124965,what is the kind and apiversion used to specify a kibana instance on kubernetes?,443,1,short_code,advanced_architecture,how_to,1,0,1,0,1,non_substitutable,0.19095459580421448,0

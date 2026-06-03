@@ -1,0 +1,4 @@
+approach,implied_loss,comment
+naive_avg_difference,-3142128.263157895,Simple diff; ignores pre-trend
+linear_extrapolation,-1418907.3362036939,pre-OLS slope -0.00333/week
+ddd_ai_channel,66600.80601816697,only AI-attributable; beta=-0.137791

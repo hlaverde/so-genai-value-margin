@@ -1,0 +1,168 @@
+\begin{thebibliography}{30}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acemoglu(2024)]{acemoglu2024simple}
+Daron Acemoglu.
+\newblock The simple macroeconomics of {AI}.
+\newblock \emph{Economic Policy}, 39\penalty0 (120):\penalty0 755--796, 2024.
+
+\bibitem[Benkler(2002)]{benkler2002coase}
+Yochai Benkler.
+\newblock Coase's penguin, or, {Linux} and ``the nature of the firm''.
+\newblock \emph{Yale Law Journal}, 112\penalty0 (3):\penalty0 369--446, 2002.
+
+\bibitem[Brynjolfsson et~al.(2025)Brynjolfsson, Li, and Raymond]{brynjolfsson2025generative}
+Erik Brynjolfsson, Danielle Li, and Lindsey~R. Raymond.
+\newblock Generative {AI} at work.
+\newblock \emph{Quarterly Journal of Economics}, 140\penalty0 (2):\penalty0 889--942, 2025.
+
+\bibitem[Burtch et~al.(2024)Burtch, Lee, and Chen]{burtch2024chatgpt}
+Gordon Burtch, Dokyun Lee, and Zhichen Chen.
+\newblock The consequences of generative {AI} for online knowledge communities.
+\newblock \emph{Scientific Reports}, 14:\penalty0 10413, 2024.
+\newblock \doi{10.1038/s41598-024-61221-0}.
+
+\bibitem[Butler(2001)]{butler2001membership}
+Brian~S. Butler.
+\newblock Membership size, communication activity, and sustainability: A resource-based model of online social structures.
+\newblock \emph{Information Systems Research}, 12\penalty0 (4):\penalty0 346--362, 2001.
+
+\bibitem[Cameron et~al.(2008)Cameron, Gelbach, and Miller]{cameron2008wild}
+A.~Colin Cameron, Jonah~B. Gelbach, and Douglas~L. Miller.
+\newblock Bootstrap-based improvements for inference with clustered errors.
+\newblock \emph{Review of Economics and Statistics}, 90\penalty0 (3):\penalty0 414--427, 2008.
+
+\bibitem[Cameron et~al.(2011)Cameron, Gelbach, and Miller]{cameron2011robust}
+A.~Colin Cameron, Jonah~B. Gelbach, and Douglas~L. Miller.
+\newblock Robust inference with multiway clustering.
+\newblock \emph{Journal of Business \& Economic Statistics}, 29\penalty0 (2):\penalty0 238--249, 2011.
+
+\bibitem[Choi et~al.(2022)Choi, Hickman, Monahan, and Schwarcz]{choi2022chatgpt}
+Jonathan~H. Choi, Kristin~E. Hickman, Amy Monahan, and Daniel Schwarcz.
+\newblock {ChatGPT} goes to law school.
+\newblock \emph{Journal of Legal Education}, 71\penalty0 (3):\penalty0 387--400, 2022.
+
+\bibitem[Cohen and Levinthal(1990)]{cohenlevinthal1990absorptive}
+Wesley~M. Cohen and Daniel~A. Levinthal.
+\newblock Absorptive capacity: a new perspective on learning and innovation.
+\newblock \emph{Administrative Science Quarterly}, 35\penalty0 (1):\penalty0 128--152, 1990.
+
+\bibitem[Cui et~al.(2024)Cui, Demirer, Jaffe, Musolff, Peng, and Salz]{cui2024effects}
+Zheyuan~Kevin Cui, Mert Demirer, Sonia Jaffe, Leon Musolff, Sida Peng, and Tobias Salz.
+\newblock The effects of generative {AI} on high-skilled work: evidence from three field experiments with software developers.
+\newblock \emph{Working paper}, 2024.
+
+\bibitem[del Rio-Chanona et~al.(2024)del Rio-Chanona, Laurentsyeva, and Wachs]{delriochanona2024large}
+R.~Maria del Rio-Chanona, Nadzeya Laurentsyeva, and Johannes Wachs.
+\newblock Large language models reduce public knowledge sharing on online {Q\&A} platforms.
+\newblock \emph{PNAS Nexus}, 3\penalty0 (9):\penalty0 pgae400, 2024.
+\newblock \doi{10.1093/pnasnexus/pgae400}.
+
+\bibitem[Eloundou et~al.(2024)Eloundou, Manning, Mishkin, and Rock]{eloundou2024gpts}
+Tyna Eloundou, Sam Manning, Pamela Mishkin, and Daniel Rock.
+\newblock {GPTs} are {GPTs}: labor market impact potential of {LLMs}.
+\newblock \emph{Science}, 384\penalty0 (6702):\penalty0 1306--1308, 2024.
+
+\bibitem[{European Union}(2024)]{eu_ai_act_2024}
+{European Union}.
+\newblock Regulation ({EU}) 2024/1689 of the {European} {Parliament} and of the {Council} (artificial intelligence act). article 53: Obligations for general-purpose {AI} model providers, including training-data summary disclosures.
+\newblock Official Journal of the European Union, 2024.
+
+\bibitem[Faraj et~al.(2011)Faraj, Jarvenpaa, and Majchrzak]{faraj2011knowledge}
+Samer Faraj, Sirkka~L. Jarvenpaa, and Ann Majchrzak.
+\newblock Knowledge collaboration in online communities.
+\newblock \emph{Organization Science}, 22\penalty0 (5):\penalty0 1224--1239, 2011.
+
+\bibitem[Frischmann(2012)]{frischmann2012infrastructure}
+Brett~M. Frischmann.
+\newblock \emph{Infrastructure: The Social Value of Shared Resources}.
+\newblock Oxford University Press, 2012.
+
+\bibitem[Goes et~al.(2014)Goes, Lin, and Au~Yeung]{goes2014popularity}
+Paulo~B. Goes, Mingfeng Lin, and Ching-man Au~Yeung.
+\newblock Popularity effect in user-generated content: Evidence from online product reviews.
+\newblock \emph{Information Systems Research}, 25\penalty0 (2):\penalty0 222--238, 2014.
+
+\bibitem[Jaffe et~al.(1993)Jaffe, Trajtenberg, and Henderson]{jaffe1993geographic}
+Adam~B. Jaffe, Manuel Trajtenberg, and Rebecca Henderson.
+\newblock Geographic localization of knowledge spillovers as evidenced by patent citations.
+\newblock \emph{Quarterly Journal of Economics}, 108\penalty0 (3):\penalty0 577--598, 1993.
+
+\bibitem[Kankanhalli et~al.(2005)Kankanhalli, Tan, and Wei]{kankanhalli2005contributing}
+Atreyi Kankanhalli, Bernard C.~Y. Tan, and Kwok-Kee Wei.
+\newblock Contributing knowledge to electronic knowledge repositories: An empirical investigation.
+\newblock \emph{MIS Quarterly}, 29\penalty0 (1):\penalty0 113--143, 2005.
+
+\bibitem[Leonardi(2011)]{leonardi2011affordances}
+Paul~M. Leonardi.
+\newblock When flexible routines meet flexible technologies: {A}ffordance, constraint, and the imbrication of human and material agencies.
+\newblock \emph{MIS Quarterly}, 35\penalty0 (1):\penalty0 147--167, 2011.
+
+\bibitem[Nagle(2018)]{nagle2018learning}
+Frank Nagle.
+\newblock Learning by contributing: gaining competitive advantage through contribution to crowdsourced public goods.
+\newblock \emph{Organization Science}, 29\penalty0 (4):\penalty0 569--587, 2018.
+
+\bibitem[Peng et~al.(2023)Peng, Kalliamvakou, Cihon, and Demirer]{peng2023impact}
+Sida Peng, Eirini Kalliamvakou, Peter Cihon, and Mert Demirer.
+\newblock The impact of {AI} on developer productivity: evidence from {GitHub} {Copilot}.
+\newblock \emph{arXiv preprint arXiv:2302.06590}, 2023.
+
+\bibitem[Quinn and Gutt(2024)]{quinngutt2024heterogeneous}
+Martin Quinn and Dominik Gutt.
+\newblock Heterogeneous effects of generative {AI} on knowledge seeking in online communities.
+\newblock \emph{Working paper}, 2024.
+\newblock SSRN working paper 4522386.
+
+\bibitem[Santos~Silva and Tenreyro(2006)]{santossilva2006log}
+J.~M.~C. Santos~Silva and Silvana Tenreyro.
+\newblock The log of gravity.
+\newblock \emph{Review of Economics and Statistics}, 88\penalty0 (4):\penalty0 641--658, 2006.
+
+\bibitem[Shan and Qiu(2025)]{shanqiu2026isr}
+Guohou Shan and Liangfei Qiu.
+\newblock Examining the impact of generative {AI} on users' voluntary knowledge contribution: Evidence from a natural experiment on {Stack} {Overflow}.
+\newblock \emph{Information Systems Research}, 2025.
+\newblock \doi{10.1287/isre.2023.0332}.
+\newblock Articles in Advance, published online 24 September 2025.
+
+\bibitem[Shumailov et~al.(2024)Shumailov, Shumaylov, Zhao, Papernot, Anderson, and Gal]{shumailov2024curse}
+Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Nicolas Papernot, Ross Anderson, and Yarin Gal.
+\newblock {AI} models collapse when trained on recursively generated data.
+\newblock \emph{Nature}, 631:\penalty0 755--759, 2024.
+\newblock \doi{10.1038/s41586-024-07566-y}.
+
+\bibitem[{Stack Exchange Inc.}(2024)]{stackexchange_openai_2024}
+{Stack Exchange Inc.}
+\newblock Stack {Exchange} and {OpenAI} partner to provide curated technical content for model training.
+\newblock Press release, May 6, 2024, 2024.
+\newblock Public licensing agreement between Stack Exchange and OpenAI.
+
+\bibitem[Temizkan and Kumar(2024)]{temizkankumar2024dss}
+Orcun Temizkan and Ram~L. Kumar.
+\newblock Knowledge transfer to aid social coding: The case of {Stack} {Overflow}.
+\newblock \emph{Decision Support Systems}, 179:\penalty0 114174, 2024.
+\newblock \doi{10.1016/j.dss.2024.114174}.
+
+\bibitem[Wachs et~al.(2022)Wachs, Nitecki, Schueller, and Polleres]{wachs2022geography}
+Johannes Wachs, Mariusz Nitecki, William Schueller, and Axel Polleres.
+\newblock The geography of open source software: evidence from {GitHub}.
+\newblock \emph{Technological Forecasting and Social Change}, 176:\penalty0 121478, 2022.
+
+\bibitem[Wasko and Faraj(2005)]{wasko2005faraj}
+Molly~McLure Wasko and Samer Faraj.
+\newblock Why should {I} share? {E}xamining social capital and knowledge contribution in electronic networks of practice.
+\newblock \emph{MIS Quarterly}, 29\penalty0 (1):\penalty0 35--57, 2005.
+
+\bibitem[Xue et~al.(2026)Xue, Wang, Zheng, Li, and Tan]{xue2026chatgpt}
+Junzhi Xue, Lizheng Wang, Jinyang Zheng, Yongjun Li, and Yong Tan.
+\newblock Can {ChatGPT} kill user-generated {Q\&A} platforms?
+\newblock \emph{Information Systems Research}, 2026.
+\newblock \doi{10.1287/isre.2023.0561}.
+\newblock Articles in Advance, published online 21 May 2026.
+
+\end{thebibliography}

@@ -1,0 +1,29 @@
+\begin{table}[ht]
+\centering
+\caption{Pre-trend-matched identification. Because exact parallel trends
+are rejected on the full panel, we re-estimate the triple difference on
+sub-samples constructed to remove the divergent-secular-trend channel.
+Each tag's pre-treatment ($2020$--Nov $2022$) linear slope of
+$\log(1+Q)$ is computed; the interquartile-band specification keeps the
+$75$ tags whose pre-slope lies within one IQR of the median, and the
+quartile specifications re-estimate within each pre-slope quartile.
+If the effect were an artefact of divergent pre-trends it would
+concentrate in the steepest-slope tags; instead it is present in the
+near-median band and is not strongest in the extreme quartiles.}
+\label{tab:matched_pretrend}
+\small
+\begin{tabular}{lrrrc}
+\toprule
+Specification & $\hat\beta_{\text{DDD}}$ & SE & $p$ & $N_{\text{tags}}$ \\
+\midrule
+Baseline (full panel)                 & $-0.108$ & $0.046$ & $0.021$ & 100 \\
+\midrule
+Pre-slope quartile 1 (steepest decline) & $+0.055$ & $0.098$ & $0.58$  & 25 \\
+Pre-slope quartile 2                    & $-0.245$ & $0.098$ & $0.019$ & 25 \\
+Pre-slope quartile 3                    & $-0.079$ & $0.065$ & $0.23$  & 25 \\
+Pre-slope quartile 4 (steepest rise)    & $-0.243$ & $0.124$ & $0.062$ & 25 \\
+\midrule
+\textbf{Interquartile pre-slope band}   & $\mathbf{-0.129}$ & $\mathbf{0.050}$ & $\mathbf{0.012}$ & 75 \\
+\bottomrule
+\end{tabular}
+\end{table}

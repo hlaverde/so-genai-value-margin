@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering
+\caption{Revealed-answerability validation of the AI-answerability proxy. The validation outcome is built only from pre-ChatGPT Stack Overflow resolution signals: accepted answers, answered-and-not-closed status, fast first answer, and accepted fast answer. Positive values indicate that tags with higher AI-answerability also had objectively more resolvable pre-treatment questions.}
+\label{tab:revealed_answerability_validation}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Validation outcome & Metric & Coef. & $N$ \\
+\midrule
+Tag-level revealed score, Pearson & pearson & 0.563 & 100 \\
+Tag-level revealed score, Spearman & spearman & 0.630 & 100 \\
+Tag-level high-answerability share & pearson & 0.649 & 100 \\
+Fast answer within 24h share & pearson & 0.568 & 100 \\
+Accepted fast answer within 24h share & pearson & 0.498 & 100 \\
+Answered and not closed share & pearson & 0.270 & 100 \\
+Question-level revealed score, Spearman & spearman & 0.138 & 30,241 \\
+AUC predicting high revealed answerability & AUC & 0.564 & 30,241 \\
+\bottomrule
+\end{tabular}
+\end{table}

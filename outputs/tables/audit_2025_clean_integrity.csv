@@ -1,0 +1,16 @@
+metric,value,status,notes
+row_count,132511,ok,
+unique_question_id_count,87027,ok,
+duplicate_question_id_x_tag_consulted,0,ok,
+missing_question_id,0,ok,
+missing_tag,0,ok,
+missing_creation_date,0,ok,
+min_creation_date,2025-01-01 00:21:22,ok,
+max_creation_date,2025-12-31 23:14:43,ok,
+all_observations_calendar_2025,True,ok,
+score_numeric,True,ok,
+accepted_answer_consistency,True,ok,checked when both accepted_answer_id and has_accepted_answer exist
+closed_consistency,True,ok,checked when both closed_date and is_closed exist
+source_api_identified,True,ok,
+missing_required_columns,,ok,Columns may be absent if not used by API filter/pipeline.
+week_column,week_start,ok,

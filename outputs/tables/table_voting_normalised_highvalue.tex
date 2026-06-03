@@ -1,0 +1,15 @@
+\begin{table}[ht]
+\centering
+\caption{Voting-baseline-normalised high-value curated artefact DDD. The post-period score is rescaled by the ratio of pre-period to post-period mean absolute score at the tag level, addressing the concern that post-ChatGPT voting volume falls and mechanically depresses scores. Rescaling factors are clipped to [0.5, 3.0] to avoid extrapolation in low-traffic tags.}
+\label{tab:voting_normalised_highvalue}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Threshold & $\hat\beta_{DDD}$ & SE & $p$ & 95\% CI & $N$ artefacts \\
+\midrule
+score $\geq$ 1 (voting-normalised) & -0.1438 & 0.0542 & 0.0094 & [-0.251, -0.036] & 1,555,212 \\
+score $\geq$ 2 (voting-normalised) & -0.1793 & 0.0494 & 0.0005 & [-0.277, -0.081] & 671,673 \\
+score $\geq$ 5 (voting-normalised) & -0.0979 & 0.0427 & 0.0241 & [-0.183, -0.013] & 134,838 \\
+\bottomrule
+\end{tabular}
+\end{table}

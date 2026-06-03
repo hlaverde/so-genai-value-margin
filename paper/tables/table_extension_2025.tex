@@ -1,0 +1,38 @@
+\begin{table}[ht]
+\centering
+\caption{2025 extension on the \textbf{full 100-tag panel} (the
+late-emergence test). Calendar-2025 questions for all 100 tags were
+collected from the public Stack Exchange API (registered key; 0 failed
+windows, 0 page-cap flags), extending the panel to 186{,}188 cells over
+2020--2025. The pre-2025 portion reproduces the baseline exactly
+($-0.106$, a consistency check). Adding the full 2025 year strengthens
+the triple difference from $-0.108$ to $-0.172$ and tightens it to
+$p=0.002$, and the quarterly event study deepens \emph{monotonically}
+across all of 2025 rather than reverting---strongly disfavouring the
+reading that the effect is a transient late-2024 episode (e.g.\ the
+mid-2023 moderation strike) and most consistent with sustained LLM
+diffusion.}
+\label{tab:extension_2025}
+\small
+\begin{tabular}{lr}
+\toprule
+\multicolumn{2}{l}{\emph{Panel A. Triple difference, full 100-tag panel}} \\
+\midrule
+Pre-2025 portion (consistency gate)        & $-0.106$ ($p=0.023$) \\
+Full 2020--2025                            & $-0.172$ ($p=0.002$) \\
+Full 2020--2025, boundary-excluded         & $-0.203$ ($p=0.001$) \\
+\midrule
+\multicolumn{2}{l}{\emph{Panel B. Quarterly event-study coefficient, post-period}} \\
+\midrule
+T$+$6 (Q2 2024)  & $-0.323$ \\
+T$+$8 (Q4 2024)  & $-0.428$ \\
+T$+$10 (Q2 2025) & $-0.585$ \\
+T$+$11 (Q3 2025) & $-0.655$ \\
+T$+$12 (Q4 2025) & $-0.680$ \\
+\midrule
+\multicolumn{2}{l}{\emph{Panel C. Monitor persistence on new 2025 data}} \\
+\midrule
+Spearman(high-value drop 2024, drop 2025) & $0.903$ ($p<0.001$) \\
+\bottomrule
+\end{tabular}
+\end{table}

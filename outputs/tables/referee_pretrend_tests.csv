@@ -1,0 +1,7 @@
+test,outcome,statistic,p_value,estimate,std_error,decision_5pct
+pre_period_slope_test,log_questions,3.1128454501270744,0.001852930217015745,0.0014587261691197233,0.00046861503164578064,reject_parallel_pretrend
+pre_period_slope_test,log_answers,3.954808416990743,7.659600522376117e-05,0.0016098416279549516,0.0004070593207596887,reject_parallel_pretrend
+pre_period_slope_test,log_unique_users,3.0492184184849123,0.0022943760445150113,0.0014113994278830875,0.0004628725247515657,reject_parallel_pretrend
+pre_period_slope_test,short_code_share,-3.3001039626842914,0.000966490180418807,-6.32654264969589e-05,1.917073741079934e-05,reject_parallel_pretrend
+joint_f_test_pre_period_bins,log_questions,4.093766048343792,5.8800090837752264e-05,,,reject_parallel_pretrend
+joint_f_test_pre_period_bins,log_answers,3.6105301584923453,0.0002620365061421781,,,reject_parallel_pretrend

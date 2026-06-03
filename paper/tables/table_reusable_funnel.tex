@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\caption{Triple-difference (DDD) estimates across the observed support-post funnel. The dependent variable is $\log(1+Y_{twk})$ where $Y$ is the cell-level count. Coefficients on the triple interaction $\text{AI}_k \cdot \text{Post}_t \cdot \text{Sub}_k$ are reported, with tag-clustered standard errors in parentheses. The implied shortfall is computed as $\sum_{\text{post}}(Y \cdot e^{-\hat\beta \cdot \text{AI} \cdot \text{Sub}} - Y)$.}
+\label{tab:reusable_funnel}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Funnel stage & $\hat\beta_{DDD}$ & SE & $p$ & 95\% CI & N obs & Implied shortfall \\
+\midrule
+Questions & -0.1082 & (0.0460) & 0.0206 & [-0.199, -0.017] & 164,351 & 70,364 \\
+Answered & -0.1150 & (0.0463) & 0.0147 & [-0.207, -0.023] & 164,351 & 61,210 \\
+Accepted answer & -0.1168 & (0.0476) & 0.0159 & [-0.211, -0.022] & 164,351 & 32,809 \\
+Accepted, not closed & -0.1210 & (0.0480) & 0.0134 & [-0.216, -0.026] & 164,351 & 31,836 \\
+Accepted, score $\geq 0$ & -0.1154 & (0.0484) & 0.0190 & [-0.211, -0.019] & 164,351 & 28,504 \\
+Funnel-qualified post & -0.1183 & (0.0487) & 0.0169 & [-0.215, -0.022] & 164,351 & 28,001 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

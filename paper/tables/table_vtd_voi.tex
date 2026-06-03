@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\centering
+\caption{Intensive-margin value of calibration, \textbf{full 100-tag 2025 panel} (out of sample). A manager allocates an intervention budget $B$ (a fraction of total tag activity) to protect realised 2025 high-value flow, ranking by efficiency. \textbf{Oracle} is the perfect-foresight cost-constrained optimum; \textbf{Calibrated} ranks by end-2024 high-value-at-risk; \textbf{Naive} by raw activity loss; \textbf{Random} averages shuffles. Cells are the share of realised 2025 high-value loss captured; the regret of a rule is $(\text{Oracle}-\text{rule})/\text{Oracle}$.}
+\label{tab:vtd_voi}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+$B$ & Oracle & Calibrated & Naive & Random & Regret$_{\text{calib}}$ & Regret$_{\text{naive}}$ \\
+\midrule
+10\% & 0.19 & 0.19 & 0.19 & 0.08 & 0.01 & 0.04 \\
+25\% & 0.38 & 0.38 & 0.36 & 0.23 & 0.00 & 0.05 \\
+40\% & 0.55 & 0.55 & 0.52 & 0.38 & 0.00 & 0.04 \\
+50\% & 0.65 & 0.64 & 0.63 & 0.48 & 0.00 & 0.03 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,9 @@
+check,old_value,new_value,difference,status,notes
+same_tags,100,100,0,ok,
+same_question_types,7,7,,ok,
+duplicate_old_keys,0,,,ok,
+duplicate_new_keys_to_old_max,,0,,ok,
+exact_rows_before_2024_12_30,164009,164009,0,ok,Excludes crossing week later consolidated with Jan 2025.
+total_questions_before_2024_12_30,8382272,8382272,0,ok,
+differences_to_old_max,0,468,468,warn,Differences only in 2024-12-30 crossing week.
+old_max_week,2024-12-30,2024-12-30,,ok,

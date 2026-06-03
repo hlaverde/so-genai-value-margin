@@ -1,0 +1,4 @@
+comparison,kappa,n
+heuristic_vs_zeroshot,0.016299580937530367,500
+minilm_vs_zeroshot,0.001662919243020422,500
+mpnet_vs_zeroshot,0.014726662545261893,500

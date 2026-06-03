@@ -1,0 +1,4 @@
+outcome,estimate,cluster_tag_se,cluster_tag_p,two_way_cluster_se,two_way_cluster_p,wild_bootstrap_p,block_bootstrap_p,note
+log_questions,-0.3012703189551712,0.06974571868114414,1.567000885716041e-05,0.07120148364342133,2.3289708337648207e-05,,,wild/block bootstrap scaffold pending computational bootstrap run
+log_answers,-0.25390675400773094,0.06639272100609755,0.00013132287700301504,0.06778201701487893,0.00017996349933935285,,,wild/block bootstrap scaffold pending computational bootstrap run
+log_unique_users,-0.28839624217032767,0.07183776912067893,5.966178204275252e-05,0.07317574923689509,8.122333506910273e-05,,,wild/block bootstrap scaffold pending computational bootstrap run

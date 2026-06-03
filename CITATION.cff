@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this replication package, please cite the paper below."
+title: "Replication package: The Post-ChatGPT Contraction Reaches the Crowd-Validated Margin"
+type: software
+authors:
+  - given-names: "Henry"
+    family-names: "Laverde-Rojas"
+    affiliation: "Programa de Economía, Universidad Militar Nueva Granada, Campus, Colombia"
+  - given-names: "Carlos"
+    family-names: "Laverde-Rodriguez"
+    affiliation: "Programa de Economía, Universidad Militar Nueva Granada, Campus, Colombia"
+year: 2026
+url: "https://github.com/hlaverde/so-genai-value-margin"
+license: MIT
+preferred-citation:
+  type: article
+  title: "The Post-ChatGPT Contraction Reaches the Crowd-Validated Margin: A Within-Tag Triple Difference and a Value-Calibrated Early-Warning System for Stack Overflow"
+  authors:
+    - given-names: "Henry"
+      family-names: "Laverde-Rojas"
+      affiliation: "Programa de Economía, Universidad Militar Nueva Granada, Campus, Colombia"
+    - given-names: "Carlos"
+      family-names: "Laverde-Rodriguez"
+      affiliation: "Programa de Economía, Universidad Militar Nueva Granada, Campus, Colombia"
+  year: 2026
+  notes: "Working paper, under review."

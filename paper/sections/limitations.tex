@@ -1,0 +1,63 @@
+\label{sec:limitations_body}
+
+\paragraph{Generalisability.}\label{ssec:lim_generalize}
+Stack Overflow is one Q\&A platform in one domain (programming).
+The decision point we identify---the search-for-help moment that
+historically ended in a public query and now ends in an LLM
+conversation---is a portable object that generates testable
+hypotheses for medical, legal \citep{choi2022chatgpt}, and
+academic Q\&A, implementable with the same design and API; we do
+not undertake them here because each domain needs its own
+substitutability taxonomy. We also do not observe other public
+channels (Reddit, Discord, forums), so the DDD estimates changes
+\emph{on} Stack Overflow but cannot distinguish movement to
+private LLMs from movement to other public channels.
+
+\paragraph{Input margin, not innovation outcomes.}\label{ssec:lim_scope}
+The DDD estimates an innovation \emph{input}
+(\S\ref{ssec:theory_qa_as_input}), not patents, products, entry,
+or productivity; the informative horizon for downstream
+propagation is probably 5--10 years and our window is two.
+Heterogeneity by user tenure---the margin \citet{xue2026chatgpt}
+study---is not separately observed in the aggregated cell-level
+panel; a follow-up using the Stack Exchange data dump
+(zero-budget but storage-intensive) could close this gap.
+
+\paragraph{Measurement of substitutability.}\label{ssec:lim_measurement}
+The binary classification is validated but imperfect (Fleiss
+$\kappa=0.52$; seven-way $\kappa=0.40$;
+\S\ref{sec:validation}), and the negative coefficient on
+advanced-architecture (\S\ref{ssec:mech_qtype_anomaly}) suggests
+the boundary moves as capabilities improve. The pre-treatment
+proxy is not a direct LLM-capability benchmark; we report the
+embedding-answerability treatment as a co-primary check, but a
+direct pass-rate measure (a local open-weight model over sampled
+pre-period questions) would be more precise and is a natural next
+step within the zero-budget rule.
+
+\paragraph{Pre-trends.}\label{ssec:lim_pretrend}
+Exact parallel trends are rejected; we treat the pre-period
+convergence, placebo sign-reversal, Copilot placebo, and the
+HonestDiD $\Delta^{\text{RM}}$ profile (robust CI first contains
+zero at $\bar M=0.75$; \S\ref{ssec:id_honest_did}) as evidence
+against a simple secular-trend explanation, not proof of parallel
+trends, and describe the causal reading as moderate rather than
+strong. A quadratic trend control (in the replication package)
+absorbs more of the effect mechanically by mimicking the shock
+shape; we report it as a limit case.
+
+\paragraph{No welfare conclusion.}\label{ssec:lim_welfare}
+We bound one public-cost channel from above. The private
+productivity gains documented elsewhere are first-order and
+plausibly an order of magnitude larger
+(\S\ref{ssec:pol_welfare}), and the long-run model-degradation
+implications \citep{shumailov2024curse} are unresolved.
+
+\paragraph{Scope of the artefact.}\label{ssec:lim_artefact}
+The early-warning system is a reproducible scoring-and-alerting
+script (\S\ref{ssec:pol_monitor}); a production dashboard and a
+usability evaluation with platform moderators would be required
+to claim a deployed, human-evaluated system, and neither was
+available for this study. (The 2025 panel extension earlier
+flagged as future work is now complete for all 100 tags and used
+in \S\ref{ssec:id_threats}.)

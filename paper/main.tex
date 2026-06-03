@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makecell}
+\usepackage{setspace}
+\usepackage{adjustbox}
+% Reduce overfull-hbox warnings from long texttt identifiers and URLs.
+\emergencystretch=3em
+\hyphenpenalty=200
+\tolerance=600
+\sloppy
+\usepackage[round,authoryear]{natbib}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+\doublespacing
+
+\title{The Post-ChatGPT Contraction Reaches the Crowd-Validated Margin:\\
+A Within-Tag Triple Difference and a Value-Calibrated
+Early-Warning System for Stack Overflow}
+\author{Henry Laverde-Rojas \quad Carlos Laverde-Rodriguez \\
+Programa de Econom\'ia, Universidad Militar Nueva Granada, Campus, Colombia}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+Generative AI has contracted public Q\&A activity on Stack
+Overflow \citep{burtch2024chatgpt,delriochanona2024large,xue2026chatgpt};
+a benign reading holds that it prunes only the low-value posts
+a platform would not have retained as durable artefacts. Using
+a primary 2020--2024 panel of 8.4 million Stack Overflow
+questions across 100 top pre-treatment tags and 261 weeks, with
+a full 100-tag 2025 validation extension, we estimate a
+within-tag triple difference at the (tag $\times$ week
+$\times$ question-type) cell. A pre-specified shape test
+rejects the \emph{strict} benign reading: displacement is
+negative across the crowd-validated range
+($\hat\beta=-0.167$, $p<10^{-4}$), roughly constant over
+the low-to-mid net-score bins and fading only at the rare
+elite tail, so the channel reaches the crowd-validated margin
+rather than being confined to score-zero posts. The volume
+baseline is $-0.108$ ($p=0.021$) under a historical
+answerability proxy and $-0.119$ ($p<0.001$) under a co-primary
+embedding score that uses no historical features. We turn the
+result into a \emph{value-calibrated early-warning system} for
+budget-constrained allocation of intervention effort: out of
+sample, the activity-decline metric a platform already tracks
+detects where realised 2025 high-value erosion is largest
+(AUC $0.98$; a value-weighted ranking reaches $0.57$), and the
+value-margin estimates supply the \emph{calibration} that
+converts an activity alert into the high-value posts at
+risk---allocating effort by raw activity leaves up to $5\%$ of
+the protectable high-value flow unprotected, while a persistent
+composition flag ($\rho=0.90$ into 2025) classifies which
+declines are value-disproportionate. Exact parallel trends are
+rejected, so the estimate is a conditional post-ChatGPT
+association aligned with the LLM-substitutability mechanism;
+its credibility rests on a convergence of diagnostics---placebo
+sign-reversal, pre-trend matching, a 32-cell specification
+curve, a donut difference-in-differences, and a HonestDiD
+breakdown at $\bar M=0.75$---and the full 100-tag 2025 extension
+strengthens the triple difference to $-0.172$ ($p=0.002$),
+deepening monotonically to $-0.68$ with no reversion. All
+evidence for the main claims is reported in the article; a
+public replication package provides the code, data-construction
+scripts, audit logs, and extended robustness outputs.
+\end{abstract}
+
+\noindent\textbf{Keywords:} generative artificial
+intelligence; large language models; online knowledge
+communities; question-and-answer platforms; user-generated
+content; digital public goods; innovation inputs;
+crowd validation; triple difference;
+pre-trend sensitivity.
+
+\noindent\textbf{JEL codes:} O33, O36, L17, J24, C23, D85.
+
+\section{Introduction}\label{sec:intro}
+\input{sections/introduction}
+
+\section{Theoretical framework}\label{sec:theory}
+\input{sections/theory}
+
+\section{Data}\label{sec:data}
+\input{sections/data}
+
+\section{Identification strategy}\label{sec:identification}
+\input{sections/identification}
+
+\section{Main results}\label{sec:results}
+\input{sections/results_ddd_question_type}
+
+\section{Robustness and validity}\label{sec:robustness}
+\input{sections/robustness}
+
+\section{Mechanisms}\label{sec:mechanisms}
+\input{sections/mechanisms}
+
+\section{Validation of question-type classification}\label{sec:validation}
+\input{sections/validation_question_type}
+
+\section{A value-calibrated early-warning system and its
+implications}\label{sec:policy}
+\input{sections/policy_implications}
+
+\section{Limitations}\label{sec:limitations}
+\input{sections/limitations}
+
+\section{Conclusion}\label{sec:conclusion}
+\input{sections/conclusion}
+
+% ---------------------------------------------------------------
+% Extended robustness, mechanism, and validation outputs live in
+% the public replication package (a research-data and code
+% archive), not as journal supplementary material.
+% ---------------------------------------------------------------
+
+\section*{Data and code availability}
+All evidence necessary to evaluate the main claims is reported in
+the article. A public replication package provides the code,
+data-construction scripts, audit logs, derived tables, and
+extended robustness outputs needed to reproduce the analysis; it
+is a research-data and code archive, not journal supplementary
+material. Raw Stack Overflow content is not redistributed;
+derived statistics and scripts to regenerate the data from public
+sources are provided where licensing permits. Replication
+repository: \url{https://github.com/hlaverde/so-genai-value-margin}.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

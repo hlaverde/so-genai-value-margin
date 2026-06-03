@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\caption{Value-weighted funnel-qualified-post outcomes. Counts only accepted, non-closed posts that meet successively stricter score thresholds, plus a value-weighted aggregate. Each row is a DDD on $\log(1+Y_{twk})$ for the new outcome $Y$. Implied shortfall computed cell by cell.}
+\label{tab:value_weighted_funnel}
+\small \setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrr}
+\toprule
+Outcome & $\hat\beta_{DDD}$ & SE & $p$ & 95\% CI & N obs & Implied shortfall \\
+\midrule
+Funnel-qualified post (count, baseline) & -0.1183 & (0.0487) & 0.0169 & [-0.215, -0.022] & 164,351 & 28,001 \\
+High-value (score $\geq 1$) & -0.1308 & (0.0505) & 0.0110 & [-0.231, -0.031] & 164,351 & 15,239 \\
+Very-high-value (score $\geq 5$) & -0.0906 & (0.0571) & 0.1155 & [-0.204, 0.023] & 164,351 & 309 \\
+Value-weighted ($\log(1+\max(s,0))$) & -0.1095 & (0.0554) & 0.0508 & [-0.219, 0.000] & 164,351 & 11,294 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

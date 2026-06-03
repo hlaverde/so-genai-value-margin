@@ -1,0 +1,104 @@
+\label{sec:intro_body}
+
+Public question-and-answer platforms such as Stack Overflow are
+part of the digital infrastructure of distributed
+problem-solving: they convert individual software problems into
+searchable, accepted, moderator-retained posts that future
+contributors, users, and---increasingly---large language models
+consult when facing analogous problems
+\citep{wasko2005faraj,goes2014popularity,nagle2018learning}.
+Generative AI reconfigures this infrastructure: since November
+2022 a wide class of programming questions can be routed to a
+private conversational LLM at near-zero marginal search cost
+\citep{eloundou2024gpts,acemoglu2024simple}, and that private
+channel produces no public artefact unless the user voluntarily
+reposts the resolved problem. The substitution between the public
+and private channels---and its consequences for a platform whose
+replenishment depends on the contribution incentives the
+substitute now competes against
+\citep{kankanhalli2005contributing,butler2001membership,benkler2002coase}---is
+the question this paper studies.
+
+Recent work establishes that aggregate replenishment has slowed.
+\citet{delriochanona2024large} report a $\sim$15\% mean decline
+rising to $\sim$25\%; \citet{burtch2024chatgpt} document
+analogous declines across Q\&A platforms; and
+\citet{quinngutt2024heterogeneous} report that the effect of
+generative AI on knowledge seeking is heterogeneous rather than
+uniform, motivating a move beyond a single average effect to the
+within-community margin. \citet{xue2026chatgpt}, in \emph{ISR},
+use a cross-platform design and document both a volume reduction
+and an \emph{improvement} in the average quality of surviving
+questions---a combination naturally read as \emph{benign
+pruning}, under which LLMs absorb the easier, lower-value
+questions. A complementary ISR line studies \emph{answerer}
+behaviour \citep{shanqiu2026isr}. The aggregate downward shift is
+no longer in dispute; three questions remain open.
+
+\emph{First}, the aggregate papers cannot adjudicate the
+\emph{value distribution} of the displaced posts. The
+benign-pruning reading requires that displacement concentrates at
+the low-value end---that the platform retains the crowd-validated,
+high-value answers downstream users rely on---which an aggregate
+quantity-and-quality decomposition cannot test because its unit is
+the average surviving question, not the score-conditioned post
+count. \emph{Second}, none estimates the LLM-substitutability
+mechanism at the \emph{task level}: substitutable categories
+within AI-answerable tags should decline more than
+non-substitutable categories \emph{in the same tags}, the slice
+that admits a more disciplined quasi-causal reading under a
+within-tag parallel-trends assumption; a cross-platform design
+identifies the average treated-platform effect but cannot
+decompose this share. \emph{Third}, existing studies measure
+platform \emph{activity} but do not trace the same association
+through \emph{funnel-qualified posts} (accepted, non-closed,
+non-negative-score). A side-by-side positioning of the relevant
+studies is in the replication package.
+
+\paragraph{Contributions.}
+\textbf{(C1) The \emph{strict} benign-pruning reading is rejected
+at the within-tag value margin.} A single pre-specified shape
+test (one model over the mutually exclusive net-score bins,
+triple difference interacted with score level) returns a negative
+average displacement across the value distribution ($-0.167$,
+$p<10^{-4}$) attenuating with score (slope $p=2\times10^{-4}$);
+the displacement is roughly constant across the low-to-mid range
+($-0.21$, $-0.20$, $-0.21$ at bins $0,1,2$) and fades only at the
+rare elite tail, so a channel confined to score-zero posts is
+rejected---by a declared statistic, not a search over thresholds.
+\textbf{(C2) A within-tag, within-question-type triple difference
+identifies the LLM-substitutability slice.} At the
+(tag $\times$ week $\times$ question-type) cell with
+tag-by-question-type and week fixed effects, the baseline is
+$-0.108$ ($p=0.021$), strengthening to $-0.140$ ($p=0.005$) once
+the declared boundary category advanced-architecture is excluded;
+a specification curve, placebos, a positive Copilot placebo,
+PPML, two-way clustering, a wild bootstrap, and a HonestDiD
+breakdown at $\bar M=0.75$ support the conditional interpretation.
+\textbf{(C3) A value-calibrated early-warning system whose
+detection signal is chosen by out-of-sample evidence.} On the
+full 100-tag panel the activity-decline metric a platform already
+tracks predicts realised 2025 high-value erosion at AUC $0.98$
+versus $0.57$ for a value-weighted detector, so the system
+\emph{detects} on activity while the value-margin estimates
+\emph{calibrate} the alert into high-value posts at risk
+(allocating by raw activity leaves $3$--$5\%$ of the protectable
+flow unprotected); a persistent composition flag ($\rho=0.90$
+into 2025) classifies intervention \emph{type}, drawing on a
+five-transition funnel ($\sim$28{,}000-post shortfall, read as an
+accounting device).
+
+\paragraph{What this paper does not claim.}
+We do not document a ``shock'': we estimate a marginal shortfall
+of $\sim$70{,}000 questions over 109 weeks ($\sim$4\% of
+post-period weekly volume). We do not document an effect on
+innovation \emph{outcomes}, contributor entry, or productivity:
+the Q\&A margin is an \emph{input} to open innovation. We do not
+derive a welfare conclusion, since the private productivity gains
+of LLM adoption
+\citep{brynjolfsson2025generative,peng2023impact,cui2024effects}
+are not estimated. The full robustness battery, mechanism,
+validation, and positioning detail are in the public replication
+package; \S\ref{sec:theory}--\S\ref{sec:conclusion} develop the
+framework, data, identification, results, mechanisms, validation,
+the early-warning system, limitations, and conclusion in turn.

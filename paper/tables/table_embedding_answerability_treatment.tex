@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\centering
+\caption{DDD estimates using alternative tag-level treatment measures. The embedding-answerability treatment is the tag-level mean cosine-similarity differential from Table~\ref{tab:embedding_validation}, standardized to mean zero and unit variance across the 100 tags. It is independent of the historical Stack Overflow features used in the structural proxy.}
+\label{tab:embedding_answerability_treatment}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Treatment measure & $\hat\beta_{DDD}$ & SE & $p$ & N \\
+\midrule
+Structural proxy & -0.1082** & 0.0460 & 0.0206 & 164,351 \\
+Embedding answerability (z) & -0.1188*** & 0.0247 & 0.0000 & 164,351 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.92\textwidth}
+\scriptsize Notes. Outcome is $\log(1+\text{questions})$ at the tag-week-question-type level. All specifications include tag$\times$question-type and week fixed effects and cluster standard errors by tag. The embedding treatment is a measurement check, not a frontier-LLM benchmark.
+\end{minipage}
+\end{table}

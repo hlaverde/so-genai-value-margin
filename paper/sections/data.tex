@@ -1,0 +1,96 @@
+The project uses only public, zero-budget data: raw files come
+from the manual Stack Exchange Data Explorer (SEDE) browser
+interface or the public Stack Exchange API v2.3 (no paid quotas,
+BigQuery, or private data). Raw files are immutable; derived
+tables are regenerated from Python under \texttt{src/}, and the
+full pipeline is documented in \texttt{docs/replication\_notes.md}.
+
+\subsection{Stack Overflow tag-week-question-type panel}
+
+The core product is a panel at the (tag, week, question type)
+level, 2020-01-01 through 2024-12-31, covering \textbf{100
+pre-treatment top tags} (fixed from the pre-ChatGPT period),
+\textbf{261 calendar weeks}, and \textbf{7 derived question
+types} generated client-side from title-keyword patterns:
+short\_code, long\_code, how\_to, debugging\_simple,
+other\_conceptual, version\_environment\_specific, and
+advanced\_architecture. The first five are coded
+\emph{substitutable} ($\text{Sub}_k=1$) on the hypothesis that
+current LLMs answer them well. Of the two non-substitutable
+categories, version\_environment\_specific is the genuinely
+clean control (LLMs cannot reliably reproduce user-specific
+stack traces, environment configurations, or repository state),
+while advanced\_architecture is a declared \emph{boundary
+category}---partial LLM coverage on its conceptual side,
+organisation-specific context on its applied side. We declare
+this boundary status from the outset and report two baselines
+(\S\ref{sec:results}): the binary specification coding
+advanced\_architecture as non-substitutable ($-0.108$) and the
+boundary-excluded specification using
+version\_environment\_specific as the sole control ($-0.140$),
+the more defensible reference.
+
+The master panel has 164{,}351 cells, built from 8{,}404{,}411
+raw question-tag pairs across 5{,}000{,}258 unique questions.
+Observed annual question counts fall from 2.7 million (2020) to
+0.5 million (2024)---a stylized fact that motivates the
+identification design. Until 2023-05 the panel was built from
+parameterized SEDE SQL pasted into the browser; from 2023-06 the
+same questions are pulled from the public API (a free registered
+key, identical output schema), validated byte-for-byte against
+SEDE on the May 2023 overlap (3{,}364 rows per side, identical
+across every metadata column).
+
+\paragraph{2025 extension (full panel).}
+To test whether the association persists beyond the one-off
+2023--2024 platform events (\S\ref{ssec:id_threats}), we
+collected calendar-2025 questions for \emph{all 100 tags} from
+the same public API. The collection is complete and audited
+(100/100 tags, 0 failed windows, 0 page-cap flags, $87{,}027$
+unique 2025 questions); the combined 2020--2025 panel has
+$186{,}188$ cells over 313 weeks and reproduces the original
+panel exactly before 2024-12-30, supporting a full
+re-estimation, not just a persistence check.
+
+\subsection{Treatment intensity: AI-answerability}
+\label{ssec:data_ai_answerability}
+
+The treatment is a tag-level \emph{proxy} built from
+pre-treatment features alone (to avoid mechanical contamination):
+pre-ChatGPT accepted-answer rate, historical question frequency,
+short-code share, how-to share, and tag maturity. Four variants
+are available ($z$-score, PCA, quartile rank, and a conservative
+structural variant excluding text-derived features); results are
+reported across all four. Because a historical proxy is open to
+the objection that it captures popularity rather than
+answerability, we run the design on \emph{two co-primary}
+measures and require the result under both: the structural
+historical index ($-0.108$, $p=0.021$) and an embedding-based
+score that uses \emph{no} historical features---built only from
+the semantic similarity of question titles to fixed
+LLM-answerable versus LLM-resistant exemplars under
+\texttt{all-MiniLM-L6-v2} (free, no API cost)---which gives
+$-0.119$ ($p<0.001$). The embedding measure shares none of the
+proxy's inputs, so the popularity objection cannot explain its
+estimate; that the two agree is why we read the gradient as
+answerability-driven. The two converge moderately (Pearson
+$r\in[0.41,0.50]$ across variants) without being
+interchangeable, and the proxy also correlates with an objective
+\emph{revealed-answerability} score on 30{,}241 sampled questions
+(tag-level Pearson $r=0.563$). Full validation tables (embedding,
+partial-regression, revealed-answerability, and AUC by stratum,
+which shows the question-level signal concentrated in the
+lowest-answerability quartile) are in the replication package; we
+are explicit that the instrument is a tag-level intensity, not a
+question-level classifier.
+
+\subsection{Outcomes and governance}
+
+The main outcome is $\log(1+Q_{t,w,k})$; we also report
+$\log(1+\text{unique users})$, fractional tag counts, and PPML on
+raw counts. A zero-budget exploratory GH Archive panel is
+documented in the replication notes but not reported here, as it
+is uninformative for the present margin (too few language
+clusters and censored first-seen contributors). Stack Overflow content is CC BY-SA 4.0; the
+project distributes only derived statistics, never underlying
+user content.

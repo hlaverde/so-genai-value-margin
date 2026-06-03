@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\caption{Formal pre-trend diagnostics. Tests are estimated on pre-ChatGPT observations. The slope test regresses the outcome on the AI-by-substitutability trend gradient with fixed effects; the joint test evaluates whether the pre-period event-study bins are jointly zero. Rejections indicate that exact parallel trends is too strong, motivating the HonestDiD sensitivity bounds and matched-pretrend specifications.}
+\label{tab:formal_pretrend_diagnostics}
+\small
+\begin{tabular}{llrrl}
+\toprule
+Test & Outcome & Statistic & $p$ & Decision \\
+\midrule
+Pre-period slope test & log questions & 3.113 & 0.0019 & reject exact PT \\
+Pre-period slope test & log answers & 3.955 & 0.0001 & reject exact PT \\
+Pre-period slope test & log unique users & 3.049 & 0.0023 & reject exact PT \\
+Pre-period slope test & short code share & -3.300 & 0.0010 & reject exact PT \\
+Joint pre-period bin test & log questions & 4.094 & 0.0001 & reject exact PT \\
+Joint pre-period bin test & log answers & 3.611 & 0.0003 & reject exact PT \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\caption{HonestDiD pre-trend sensitivity bounds \citep{rambachan2023honest}, $\Delta^{\text{RM}}$ class. For each value of $\bar{M}$ (the relative magnitude bound), the table reports the robust 95\% confidence set for the average post-period treatment effect. The breakdown $\bar{M}$ is approximately 0.5, the smallest relative magnitude at which the post-period effect becomes statistically indistinguishable from zero. Implemented with \texttt{honestdid} 0.1.1 (Python port).}
+\label{tab:honestdid_bounds}
+\small \setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrrr}
+\toprule
+$\bar{M}$ & Lower bound & Upper bound & Contains 0? \\
+\midrule
+Original & -0.1003 & -0.0256 & No \\
+0.00 & -0.0977 & -0.0287 & No \\
+0.50 & -0.1666 & 0.0402 & Yes \\
+1.00 & -0.2547 & 0.1321 & Yes \\
+1.50 & -0.3504 & 0.2240 & Yes \\
+2.00 & -0.3811 & 0.3198 & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}

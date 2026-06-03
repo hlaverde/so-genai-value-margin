@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\caption{Sensitivity of the voting-baseline-rescaled high-value DDD to
+the clip range applied to the per-tag pre/post mean-absolute-score
+ratio. The four clip ranges return \emph{numerically identical}
+estimates because every tag's ratio already lies within the tightest
+band $[0.7, 2.0]$, so the clip never binds: the rescaling is applied
+(these coefficients differ from the unrescaled $-0.131$, $-0.145$,
+$-0.091$) but its result does not depend on the clip choice at all. In
+particular the elite-tail estimate (score $\geq 5$) is significant even
+with no clipping, which addresses the concern that the clip is a
+researcher degree of freedom that rescues the result.}
+\label{tab:clip_sensitivity}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Clip range & score $\geq 1$ & score $\geq 2$ & score $\geq 5$ \\
+\midrule
+No clip            & $-0.144^{*}$ & $-0.179^{*}$ & $-0.098^{*}$ \\
+$[0.3, 5.0]$       & $-0.144^{*}$ & $-0.179^{*}$ & $-0.098^{*}$ \\
+$[0.5, 3.0]$ (main) & $-0.144^{*}$ & $-0.179^{*}$ & $-0.098^{*}$ \\
+$[0.7, 2.0]$       & $-0.144^{*}$ & $-0.179^{*}$ & $-0.098^{*}$ \\
+\bottomrule
+\end{tabular}
+\\[2pt]\footnotesize $^{*}$ $p<0.05$ (tag-clustered). All tag ratios lie
+within $[0.7, 2.0]$, hence the rows coincide.
+\end{table}

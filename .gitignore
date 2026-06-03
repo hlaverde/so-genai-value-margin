@@ -1,0 +1,65 @@
+# ============================================================
+# Replication package .gitignore
+# Goal: never stage secrets, raw/large data, or build archives.
+# ============================================================
+
+# --- Secrets / credentials (never commit) ---
+.env
+.env.*
+!.env.example
+*.key
+*secret*
+credentials.json
+
+# --- Python / tooling caches ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Data: raw and large derived panels are reproducible artefacts,
+#     NOT redistributed. Regenerate from public sources via the scripts
+#     (see docs/DATA_AVAILABILITY.md and docs/REPLICATION_GUIDE.md).
+#     Small simulated CSVs are kept for smoke tests. ---
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
+data/simulated/*
+!data/**/.gitkeep
+!data/simulated/*.csv
+
+# --- Build archives / packaging artefacts (large) ---
+*.zip
+outputs/overleaf_project/
+
+# --- Copyrighted reference material (do not redistribute) ---
+Xue,.pdf
+/*.pdf
+!paper/**/*.pdf
+
+# --- LaTeX auxiliary files (keep .tex, .bib, .bbl, .pdf) ---
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.toc
+paper/*.synctex.gz
+
+# --- Internal working notes (not for the public repo) ---
+context.md
+memory/
+
+# --- Misc temp ---
+*.tmp
+*.bak

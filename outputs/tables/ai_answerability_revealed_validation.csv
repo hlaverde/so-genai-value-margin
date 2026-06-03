@@ -1,0 +1,9 @@
+validation_test,metric,coefficient,n,interpretation
+tag_corr_revealed_mean,pearson_correlation,0.562592908679353,100,higher current index aligns with observed pre-ChatGPT answerability
+tag_spearman_revealed_mean,spearman_correlation,0.6300750075007501,100,higher current index aligns with observed pre-ChatGPT answerability
+tag_corr_revealed_high_share,pearson_correlation,0.6487865350792087,100,higher current index aligns with observed pre-ChatGPT answerability
+tag_corr_fast_answer_24h_share,pearson_correlation,0.5683553430376419,100,higher current index aligns with observed pre-ChatGPT answerability
+tag_corr_accepted_fast_24h_share,pearson_correlation,0.4976827721584953,100,higher current index aligns with observed pre-ChatGPT answerability
+tag_corr_answered_not_closed_share,pearson_correlation,0.2698335123893907,100,higher current index aligns with observed pre-ChatGPT answerability
+question_spearman_revealed_score,spearman_correlation,0.13770318923231653,30241,question-level rank validation
+auc_index_predicts_revealed_high_question,auc,0.5642710570316335,30241,AUC for current index predicting high revealed answerability

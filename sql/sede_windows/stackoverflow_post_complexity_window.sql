@@ -1,0 +1,29 @@
+-- Parameterized Stack Overflow post-complexity extract for SEDE.
+-- Export files as stackoverflow_post_complexity_YYYY_YYYY.csv and combine without manual edits.
+
+##StartDate:string?2018-01-01##
+##EndDate:string?2019-12-31##
+
+SELECT
+    q.Id AS post_id,
+    q.CreationDate AS creation_date,
+    t.TagName AS tag,
+    LEN(q.Body) AS body_length,
+    CASE WHEN q.Body LIKE '%<code>%' THEN 1 ELSE 0 END AS has_code,
+    (
+        SELECT COUNT(*)
+        FROM PostTags pt2
+        WHERE pt2.PostId = q.Id
+    ) AS num_tags,
+    q.AnswerCount AS answer_count,
+    CASE WHEN q.AcceptedAnswerId IS NOT NULL THEN 1 ELSE 0 END AS has_accepted_answer,
+    q.Score AS score,
+    q.Title AS title,
+    q.Body AS body
+FROM Posts q
+INNER JOIN PostTags pt ON q.Id = pt.PostId
+INNER JOIN Tags t ON pt.TagId = t.Id
+WHERE q.PostTypeId = 1
+  AND q.CreationDate >= CAST(##StartDate## AS datetime)
+  AND q.CreationDate < DATEADD(day, 1, CAST(##EndDate## AS datetime))
+ORDER BY q.CreationDate, q.Id, t.TagName;

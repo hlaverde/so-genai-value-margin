@@ -1,0 +1,9 @@
+param,estimate,se_crv1,p_crv1,p_wild_boot,reps,raw
+ai_post_sub,-0.1377905968199312,0.051929219769485495,0.009283079454547094,,9999,"param              ai_post_sub
+t value                    nan
+Pr(>|t|)                   0.0
+bootstrap_type              11
+inference         CRV(tag_int)
+impose_null               True
+ssc                   1.016055
+dtype: object"

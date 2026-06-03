@@ -1,0 +1,28 @@
+\begin{table}[ht]
+\centering
+\caption{Partial-regression test for the embedding-based validation of the
+AI-answerability proxy. Each row reports the OLS coefficient of the
+embedding-based score on the
+\texttt{ai\_answerability\_structural} proxy,
+adding tag-level controls progressively: $\log(1+\text{pre-period}\;
+\text{questions})$, tag maturity (weeks since first appearance), and
+pre-ChatGPT accepted-answer rate. A positive coefficient that survives
+the addition of popularity-, maturity-, and accepted-rate controls
+indicates that the embedding-based validation does not merely capture
+historical popularity. Standard errors are $\text{HC1}$-robust.}
+\label{tab:embedding_partial_regression}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llrrrrr}
+\toprule
+Specification & Controls & Coef. & SE & $t$ & $p$ & $R^2$ \\
+\midrule
+(1) bivariate          & none                                                           & 0.0474 & 0.0160 & 2.97 & 0.0030 & 0.167 \\
+(2) $+ \log(\text{vol})$ & \texttt{log\_pre\_volume}                                    & 0.0549 & 0.0181 & 3.03 & 0.0024 & 0.183 \\
+(3) $+$ maturity       & + \texttt{tag\_maturity\_weeks\_pre}                           & 0.0731 & 0.0109 & 6.71 & $<10^{-10}$ & 0.291 \\
+(4) $+$ accepted rate  & + \texttt{accepted\_answer\_rate\_pre} (component of proxy)    & 0.0259 & 0.0362 & 0.71 & 0.4751 & 0.310 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

@@ -1,0 +1,29 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Cameron et~al.(2008)Cameron, Gelbach, and Miller]{cameron2008wild}
+A.~Colin Cameron, Jonah~B. Gelbach, and Douglas~L. Miller.
+\newblock Bootstrap-based improvements for inference with clustered errors.
+\newblock \emph{Review of Economics and Statistics}, 90\penalty0 (3):\penalty0 414--427, 2008.
+
+\bibitem[Cameron et~al.(2011)Cameron, Gelbach, and Miller]{cameron2011robust}
+A.~Colin Cameron, Jonah~B. Gelbach, and Douglas~L. Miller.
+\newblock Robust inference with multiway clustering.
+\newblock \emph{Journal of Business \& Economic Statistics}, 29\penalty0 (2):\penalty0 238--249, 2011.
+
+\bibitem[Quinn and Gutt(2024)]{quinngutt2024heterogeneous}
+Martin Quinn and Dominik Gutt.
+\newblock Heterogeneous effects of generative {AI} on knowledge seeking in online communities.
+\newblock \emph{Working paper}, 2024.
+\newblock SSRN working paper 4522386.
+
+\bibitem[Santos~Silva and Tenreyro(2006)]{santossilva2006log}
+J.~M.~C. Santos~Silva and Silvana Tenreyro.
+\newblock The log of gravity.
+\newblock \emph{Review of Economics and Statistics}, 88\penalty0 (4):\penalty0 641--658, 2006.
+
+\end{thebibliography}

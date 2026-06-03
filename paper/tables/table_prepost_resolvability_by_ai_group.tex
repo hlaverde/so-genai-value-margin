@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\caption{Pre/post means by AI-answerability group (median split on the AI
+structural index). Means are weighted by cell question count.
+$\Delta = \text{Post} - \text{Pre}$;
+DiD = HighAI $\Delta$ $-$ LowAI $\Delta$.}
+\label{tab:prepost_resolvability_by_ai_group}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lrrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{LowAI} & \multicolumn{3}{c}{HighAI} & DiD \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Variable & Pre & Post & $\Delta$ & Pre & Post & $\Delta$ & \\
+\midrule
+Body length (chars)  & 2{,}060 & 2{,}398 & $+339$  & 1{,}916 & 2{,}300 & $+384$  & $+45$    \\
+Accepted share       & 0.394   & 0.322   & $-0.072$ & 0.473   & 0.396   & $-0.077$ & $-0.005$ \\
+Answered share       & 0.780   & 0.725   & $-0.055$ & 0.832   & 0.781   & $-0.051$ & $+0.005$ \\
+Mean answer count    & 1.082   & 0.939   & $-0.143$ & 1.241   & 1.081   & $-0.159$ & $-0.016$ \\
+Mean score           & 0.980   & 0.588   & $-0.392$ & 0.691   & 0.478   & $-0.214$ & $+0.178$ \\
+Closed share         & 0.036   & 0.035   & $-0.001$ & 0.062   & 0.060   & $-0.002$ & $-0.001$ \\
+Code share           & 0.822   & 0.825   & $+0.002$ & 0.899   & 0.896   & $-0.003$ & $-0.006$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

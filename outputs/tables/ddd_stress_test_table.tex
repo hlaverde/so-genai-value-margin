@@ -1,0 +1,52 @@
+\begin{table}[h]
+\centering
+\small
+\caption{Triple-difference $\hat\beta_{\text{DDD}}$ across specifications and robustness checks.}
+\label{tab:ddd_stress_test}
+\begin{tabular}{lrrrr}
+\toprule
+Specification & $\hat\beta_{\text{DDD}}$ & SE & $p$ & N \\
+\midrule
+\multicolumn{5}{l}{\textit{Main + robustness}} \\
+  Baseline OLS log(1+Q), z-score, full panel & -0.1378$^{***}$ & 0.0522 & 0.008 & 164351 \\
+  Answerability PCA & -0.0449$^{**}$ & 0.0197 & 0.023 & 164351 \\
+  Answerability Quantile & -0.2098$^{***}$ & 0.0741 & 0.005 & 164351 \\
+  Answerability Structural & -0.1082$^{**}$ & 0.0481 & 0.024 & 164351 \\
+  Sub-sample top-50 tags & -0.2067$^{**}$ & 0.0931 & 0.026 & 85884 \\
+  Outcome log(1+unique users) & -0.1329$^{***}$ & 0.0515 & 0.010 & 164351 \\
+  PPML (Poisson FE) & -0.0984$^{**}$ & 0.0444 & 0.027 & 164351 \\
+\midrule
+\multicolumn{5}{l}{\textit{Trend adjustment}} \\
+  Trend control: none (baseline replicated) & -0.1378$^{***}$ & 0.0519 & 0.009 & 164351 \\
+  Trend control: linear (AI$\times$Sub$\times$t) & -0.1159$^{*}$ & 0.0594 & 0.054 & 164351 \\
+  Trend control: quadratic (AI$\times$Sub$\times$t + $\times$t$^2$) & 0.0215 & 0.0523 & 0.682 & 164351 \\
+\midrule
+\multicolumn{5}{l}{\textit{Placebo cutoffs}} \\
+  Placebo cutoff 2020-05-30 & 0.0625$^{***}$ & 0.0235 & 0.009 & 99185 \\
+  Placebo cutoff 2020-11-30 & 0.0643$^{***}$ & 0.0198 & 0.002 & 99185 \\
+  Placebo cutoff 2021-05-30 & 0.0670$^{***}$ & 0.0200 & 0.001 & 99185 \\
+  Placebo cutoff 2021-11-30 & 0.0620$^{***}$ & 0.0226 & 0.007 & 99185 \\
+  Placebo cutoff 2022-05-30 & 0.0592$^{**}$ & 0.0231 & 0.012 & 99185 \\
+  Real cutoff & -0.1378$^{***}$ & 0.0519 & 0.009 & 164351 \\
+\midrule
+\multicolumn{5}{l}{\textit{Inference}} \\
+  Two-way clustering (tag + week) & -0.1378$^{***}$ & 0.0522 & 0.008 & — \\
+  Fractional tag counts (Q/n\_top\_tags) & -0.1345$^{***}$ & 0.0471 & 0.005 & 164968 \\
+\midrule
+\multicolumn{5}{l}{\textit{Pre-trend matching}} \\
+  Stratum: slope quartile 1 (steepest decline) & -0.0554 & 0.0914 & 0.550 & 41185 \\
+  Stratum: slope quartile 2 & -0.1874$^{*}$ & 0.1089 & 0.098 & 41134 \\
+  Stratum: slope quartile 3 & -0.0842 & 0.0814 & 0.311 & 41257 \\
+  Stratum: slope quartile 4 (steepest growth) & -0.3221$^{**}$ & 0.1260 & 0.017 & 40775 \\
+  CEM matched pairs (all eligible) & -0.1378$^{***}$ & 0.0519 & 0.009 & 164351 \\
+  Interquartile band on pre-slope & -0.1550$^{***}$ & 0.0578 & 0.009 & 123185 \\
+\midrule
+\multicolumn{5}{l}{\textit{Inference}} \\
+  Wild cluster bootstrap (Rademacher, 199 reps, cluster=tag) & -0.1378$^{***}$ & 0.0519 & 0.000 & — \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{0.9\textwidth}
+\footnotesize
+Notes. Baseline regression: $\log(1+Q_{t,w,k}) = \beta_{\text{DDD}} (\text{AI}_t \times \text{Post}_w \times \text{Sub}_k) + \gamma_1 (\text{AI}_t \times \text{Post}_w) + \gamma_2 (\text{AI}_t \times \text{Sub}_k) + \gamma_3 (\text{Post}_w \times \text{Sub}_k) + \alpha_{t,k} + \delta_w + \varepsilon$, with FE tag$\times$question-type and week, errors clustered by tag (CR1). $^{***}p<0.01$, $^{**}p<0.05$, $^{*}p<0.10$.
+\end{minipage}
+\end{table}

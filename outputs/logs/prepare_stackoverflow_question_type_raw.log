@@ -1,0 +1,33 @@
+2026-05-17 10:10:58 | INFO | prepare_stackoverflow_question_type_raw | Loading 93 raw files
+2026-05-17 10:11:13 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 2711545, 'date_min': Timestamp('2020-01-01 00:01:28'), 'date_max': Timestamp('2020-12-31 23:59:37'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 93}
+2026-05-17 10:11:21 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 34862 rows to data\processed\stackoverflow_question_type_week_panel_2020.csv
+2026-05-17 10:11:47 | INFO | prepare_stackoverflow_question_type_raw | Loading 93 raw files
+2026-05-17 10:12:04 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 2711545, 'date_min': Timestamp('2020-01-01 00:01:28'), 'date_max': Timestamp('2020-12-31 23:59:37'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 93}
+2026-05-17 10:12:12 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 34862 rows to data\processed\stackoverflow_question_type_week_panel_2020.csv
+2026-05-19 17:59:44 | INFO | prepare_stackoverflow_question_type_raw | Loading 95 raw files
+2026-05-19 18:00:12 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 2225168, 'date_min': Timestamp('2021-01-01 00:00:01'), 'date_max': Timestamp('2021-12-31 23:57:30'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 95}
+2026-05-19 18:00:20 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 34435 rows to data\processed\stackoverflow_question_type_week_panel_2021.csv
+2026-05-21 14:25:02 | INFO | prepare_stackoverflow_question_type_raw | Loading 95 raw files
+2026-05-21 14:25:20 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 1918685, 'date_min': Timestamp('2022-01-01 00:01:24'), 'date_max': Timestamp('2022-12-31 23:57:23'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 95}
+2026-05-21 14:25:26 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 34063 rows to data\processed\stackoverflow_question_type_week_panel_2022.csv
+2026-05-21 20:42:37 | INFO | prepare_stackoverflow_question_type_raw | Loading 24 raw files
+2026-05-21 20:42:38 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 369771, 'date_min': Timestamp('2023-01-01 00:01:26'), 'date_max': Timestamp('2023-03-31 23:59:33'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 24}
+2026-05-21 20:42:39 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 8254 rows to data\processed\stackoverflow_question_type_week_panel_2023.csv
+2026-05-21 20:55:03 | INFO | prepare_stackoverflow_question_type_raw | Loading 32 raw files
+2026-05-21 20:55:05 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 461820, 'date_min': Timestamp('2023-01-01 00:01:26'), 'date_max': Timestamp('2023-04-30 23:57:25'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 32}
+2026-05-21 20:55:07 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 11208 rows to data\processed\stackoverflow_question_type_week_panel_2023.csv
+2026-05-21 21:01:58 | INFO | prepare_stackoverflow_question_type_raw | Loading 40 raw files
+2026-05-21 21:02:01 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 549587, 'date_min': Timestamp('2023-01-01 00:01:26'), 'date_max': Timestamp('2023-05-31 23:58:39'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 40}
+2026-05-21 21:02:02 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 13876 rows to data\processed\stackoverflow_question_type_week_panel_2023.csv
+2026-05-21 21:50:11 | INFO | prepare_stackoverflow_question_type_raw | Loading 48 raw files
+2026-05-21 21:50:14 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 633828, 'date_min': Timestamp('2023-01-01 00:01:26'), 'date_max': Timestamp('2023-06-30 23:59:20'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 48}
+2026-05-21 21:50:16 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 16384 rows to dataprocessedstackoverflow_question_type_week_panel_2023.csv
+2026-05-21 22:47:31 | INFO | prepare_stackoverflow_question_type_raw | Loading 96 raw files
+2026-05-21 22:47:36 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 1051235, 'date_min': Timestamp('2023-01-01 00:01:26'), 'date_max': Timestamp('2023-12-31 23:52:06'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 96}
+2026-05-21 22:47:40 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 32366 rows to dataprocessedstackoverflow_question_type_week_panel_2023.csv
+2026-05-22 09:32:35 | INFO | prepare_stackoverflow_question_type_raw | Loading 96 raw files
+2026-05-22 09:32:38 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 497778, 'date_min': Timestamp('2024-01-01 00:01:14'), 'date_max': Timestamp('2024-12-31 23:56:54'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 96}
+2026-05-22 09:32:40 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 30266 rows to data\processed\stackoverflow_question_type_week_panel_2024.csv
+2026-05-22 09:38:05 | INFO | prepare_stackoverflow_question_type_raw | Loading 475 raw files
+2026-05-22 09:39:40 | INFO | prepare_stackoverflow_question_type_raw | Raw audit: {'rows': 8404411, 'date_min': Timestamp('2020-01-01 00:01:28'), 'date_max': Timestamp('2024-12-31 23:56:54'), 'tags': 100, 'duplicate_question_tag': 0, 'source_files': 475}
+2026-05-22 09:40:08 | INFO | prepare_stackoverflow_question_type_raw | Wrote panel with 164968 rows to data\processed\stackoverflow_question_type_week_panel_all.csv

@@ -1,0 +1,76 @@
+\label{sec:mechanisms_body}
+
+\subsection{Decomposition by question type}\label{ssec:mech_by_type}\label{ssec:mech_qtype_anomaly}
+
+Estimating the AI$\times$Post interaction separately for each
+question type (tag and week fixed effects) orders the
+coefficients as the substitutability theory predicts:
+short-code ($-0.31$), how-to ($-0.28$), long-code ($-0.21$),
+debugging-simple ($-0.14$), other-conceptual ($-0.08$,
+marginal), advanced-architecture ($-0.16$, $p=0.003$), and
+version-environment-specific (null, $-0.03$, $p=0.54$). The
+version-environment-specific null---the genuinely clean
+control---is the only category with no detected decline. That
+the declared boundary category advanced-architecture shows a
+sizeable effect confirms its a-priori boundary status
+(\S\ref{ssec:data_ai_answerability}); because the binary
+classifier codes it $\text{Sub}_k=0$, it contributes a negative
+shift to the control group and mechanically attenuates the full
+sample, which is why excluding it strengthens the funnel DDD
+from $-0.108$ to $-0.140$ (full table in the replication
+package). Replacing the binary indicator with the continuous
+embedding score gives $-0.039$ ($p=0.004$), about a third the
+binary magnitude as expected from shrinking the contrast; the
+qualitative conclusion is unchanged.
+
+\subsection{Composition versus within-cell
+quality}\label{ssec:mech_complementarity}\label{ssec:mech_resolvability}
+
+A complementarity reading holds that users keep posting when an
+LLM answer is unsatisfactory, so the \emph{surviving} questions
+should be more complex. Descriptively this holds: within tags,
+post-period body length rises ($+303$ characters, $p<10^{-15}$)
+and accepted-answer share falls ($-0.065$, $p<10^{-15}$). But
+the Post$\times$AI-answerability interactions are null
+($p$ between $0.32$ and $0.79$), so the compositional shift is
+\emph{general across tags} rather than concentrated where
+answerability is highest---it is descriptive selection, not a
+causally estimated quality effect along the AI dimension.
+
+Separating selection from a within-cell quality channel is the
+contribution here. \citet{xue2026chatgpt} report higher average
+question quality post-ChatGPT under a cross-platform design that
+admits both channels. Re-fitting the DDD on six resolvability
+and quality outcomes under fine-grained (tag$\times$question-type)
+and week fixed effects---which absorb the composition shift---five
+of six estimates are null (accepted share $-0.003$, $p=0.45$;
+answered share $-0.001$, $p=0.85$; analogous nulls elsewhere);
+the only significant coefficient is a small \emph{rise} in
+closed share ($+0.005$, $p<0.001$). The descriptively documented
+quality improvement is therefore consistent with selection into
+the survivor population (the easier posts displaced into private
+channels) rather than with within-cell upgrading. This is not a
+contradiction of \citet{xue2026chatgpt}: the cross-platform ATT
+(aggregate declines of $\sim$15--25\%;
+\citealp{delriochanona2024large}) and the within-platform
+$\sim$5\% slice estimated here are complementary objects, not
+competing estimates of the same quantity (full mapping and
+detail tables in the replication package).
+
+\subsection{Where in the workflow does substitution
+operate?}\label{ssec:mech_copilot}
+
+The June 2022 GitHub Copilot placebo is positive ($+0.058$,
+$p=0.011$): the Stack Overflow Q\&A margin responded to ChatGPT
+but not to Copilot. Two non-exclusive readings are consistent
+with the data and we cannot separate them: Copilot operated
+inside the IDE at the code-writing moment rather than the
+search-for-help moment that ends in a public query, and its 2022
+user base was much smaller than ChatGPT's. The \emph{positive}
+sign is the informative part (a shared secular trend cannot
+produce it), but its magnitude rests on the smaller 2022
+population, so the test has limited power; we read it as
+supporting evidence on the decision-point reading, not a
+stand-alone mechanism, and present any interface-location
+interpretation as a post-hoc hypothesis the design does not
+identify.

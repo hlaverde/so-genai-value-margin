@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\centering
+\caption{Mutually exclusive score-bin effects for accepted, non-closed posts. Each row re-fits the baseline DDD with the dependent variable equal to the count of posts in the score bin. Unlike cumulative threshold outcomes, these bins show where in the crowd-score distribution the negative association is concentrated. The MDE column reports the approximate two-sided 5\% test, 80\% power minimum detectable effect, computed as $2.80\times SE$.}
+\label{tab:score_bin_artefact_effects}
+\small
+\begin{tabular}{lrrrrrrr}
+\toprule
+Score bin & $\hat\beta_{DDD}$ & SE & MDE$_{80}$ & $p$ & 95\% CI & N obs & $N$ posts \\
+\midrule
+score = 0 & -0.2080 & 0.0469 & 0.131 & 0.0000 & [-0.301, -0.115] & 164,351 & 1,620,830 \\
+score = 1 & -0.2029 & 0.0440 & 0.123 & 0.0000 & [-0.290, -0.116] & 164,351 & 895,360 \\
+score = 2 & -0.2121 & 0.0475 & 0.133 & 0.0000 & [-0.306, -0.118] & 164,351 & 341,274 \\
+score = 3 & -0.1641 & 0.0429 & 0.120 & 0.0002 & [-0.249, -0.079] & 164,351 & 137,393 \\
+score = 4 & -0.1240 & 0.0413 & 0.116 & 0.0034 & [-0.206, -0.042] & 164,351 & 64,650 \\
+score $\geq$ 5 & -0.0906 & 0.0571 & 0.160 & 0.1155 & [-0.204, 0.023] & 164,351 & 128,126 \\
+\bottomrule
+\end{tabular}
+\end{table}
